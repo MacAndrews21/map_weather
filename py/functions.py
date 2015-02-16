@@ -34,7 +34,7 @@ def cleanFile(filePath, fileName):
 
 ''' function: read the first line of the file to get the row names
     calls the temporary file
-    Callled in: getStations()
+    Called in: getStations()
 '''    
 def getFirstLine():
     
@@ -51,7 +51,9 @@ def getFirstLine():
     
     return firstLineList
     
-    
+''' function: read row by row data and put into an dictionary 
+    Called in: ? 
+'''
 def getStations(filePath, fileName):
     
     cleanFile(filePath, fileName)
@@ -74,13 +76,11 @@ def getStations(filePath, fileName):
             rowList.append(temp)
            
         print rowList
- 
-filePath = 'data/tageswerte_00001_19370101_19860630_hist/'
-fileName = 'Stationsmetadaten_klima_stationen_00001_19370101_19860630.txt'
-#getStations("py/", "temp.txt")
-#getStations(filePath, fileName)
 
-
+''' function: creates a list of all text files in an folder
+    except of the ones that do not start with 'Stationsmetadaten'
+    Called in: ?
+'''
 def createFileNameList(folderPath):
     
     ''' create List of file names in folder '''
@@ -105,9 +105,9 @@ def createFileNameList(folderPath):
         
     return fileNameList
 
-#fileNameList = createFileNameList(filePath)
-#print fileNameList
-
+''' function: creates a list of all folders in an folder
+    Called in:?
+'''
 def createFolderNameList(folderPath):
     
     ''' create emtpy list for folder names '''
@@ -120,6 +120,11 @@ def createFolderNameList(folderPath):
     return folderNames
 
 ''' test '''
+ 
+fileName = 'Stationsmetadaten_klima_stationen_00001_19370101_19860630.txt'
+filePath = 'data/tageswerte_00001_19370101_19860630_hist/'
+
+
 temp = createFolderNameList('data')
 #test = []
 for t in temp:
