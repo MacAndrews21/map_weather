@@ -105,5 +105,26 @@ def createFileNameList(folderPath):
         
     return fileNameList
 
-fileNameList = createFileNameList(filePath)
-print fileNameList
+#fileNameList = createFileNameList(filePath)
+#print fileNameList
+
+def createFolderNameList(folderPath):
+    
+    ''' create emtpy list for folder names '''
+    folderNames = []
+    
+    ''' read all folder names in the folderPath and add it to list folderNames '''
+    for name in os.listdir(folderPath):
+        folderNames.append(name)
+        
+    return folderNames
+
+''' test '''
+temp = createFolderNameList('data')
+#test = []
+for t in temp:
+    print t
+    test = createFileNameList('data/' + t )
+    print test
+    #test.append(createFileNameList(t))
+#print test
