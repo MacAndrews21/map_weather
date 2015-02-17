@@ -130,11 +130,17 @@ temp = createFolderNameList('data')
 #test = []
 for t in temp:
     print t
+    print ''
     
     test = createFileNameList('data/' + t )
     print test
+    print ''
     for i in test:
         if 'Stationsmetadaten' in i['name']:
             print i['name']
+            data = getStations('data/' + t + '/', i['name'])
+    
+    if data != None:
+        print data
     #test.append(createFileNameList(t))
 #print test
