@@ -6,113 +6,135 @@ import gdal
 import csv
 from gdalconst import *
 import postgres as po
+import zipfile
 
-##metaData = os.popen('gdalinfo -stats -nomd -norat -noct -nofl ' + filePath + fileName)
-#def getResolution (filePath, fileName):
-    #dataset = gdal.Open(filePath + fileName, GA_ReadOnly)
-    #width = dataset.RasterXSize
-    #height = dataset.RasterYSize
-    ##print 'Projection:', dataset.GetProjection()
+ 
+''' function: delete all ' ' from the file and write the file in an temporary file
+    the original file will not be overwritten
+    Called in: getStations()
+'''
+def cleanFile(filePath, fileName):
+   
+    ''' open file as csv '''
+    csv = open(filePath + fileName, 'r')
+    csvRead = csv.read()
     
-    #geotrans = dataset.GetGeoTransform()
-    #if not geotrans is None:
-        #pixelSize = geotrans[1]
+    ''' replace alls ' ' with '' to clean up the file '''
+    txt = csvRead.replace(' ', '')
     
-    #return width, height, pixelSize
+    ''' close file '''
+    csv.close()
+    
+    ''' write the file in an clean temporary file 
+        this file will be overwritten by the next file
+        => maybe it should be deleted after finish
+    '''
+    writeFile = open('py/temp.txt','w')
+    writeFile.write(txt)
+    writeFile.close() 
 
+''' function: read the first line of the file to get the row names
+    calls the temporary file
+    Called in: getStations()
+'''    
+def getFirstLine():
+    
+    with open('py/temp.txt', 'rb') as f:
+        firstLine = f.readline()
+        
+        firstLineList = []
+        firstLine = firstLine.replace(' ', '')
+        
+        for index in firstLine.split(';'):
+            if len(index) > 1:
+                #print index, len(index)
+                firstLineList.append(index)
+    
+    return firstLineList
+    
+''' function: read row by row data and put into an dictionary 
+    Called in: ? 
+'''
 def getStations(filePath, fileName):
     
-    #csv = open(filePath + fileName, 'r')
-    #csvRead = csv.read()
-    #txt = csvRead.replace(' ', '')
-    #print txt
-    #csv.close()
+    cleanFile(filePath, fileName)
     
-    #temp = open('py/temp.txt','w')
-    #temp.write(txt)
-    #temp.close()
+    firstLineList = getFirstLine()
 
+    
     with open('py/temp.txt', "rb") as csvfile:
         reader = csv.DictReader(csvfile, delimiter = ';')
-        #print 'READER:', reader
+        
         rowList = []
-        a = 0
+        
         for row in reader:
+            #print row
             temp = {}
-            temp['Stations_id'] = row['Stations_id']
-            temp['Stationshoehe'] = row['Stationshoehe']
-            temp['Geogr.Breite']  = row['Geogr.Breite'] 
-            temp['Geogr.Laenge']  = row['Geogr.Laenge'] 
-            temp['von_datum'] = row['von_datum']
-            temp['bis_datum'] = row['bis_datum']
-            temp['Stationsname']  = row['Stationsname'] 
+            for i in firstLineList:
+                #print i
+                temp[i] = row[i]
             
             rowList.append(temp)
-            #rowList.append(row)
+           
         print rowList
+
+''' function: creates a list of all text files in an folder
+    except of the ones that do not start with 'Stationsmetadaten'
+    Called in: ?
+'''
+def createFileNameList(folderPath):
+    
+    ''' create List of file names in folder '''
+    fileNameList = []
+   
+    for fileData in glob.glob(os.path.join(folderPath, '*.txt')):
+        ''' create temporary dictionary '''
+        namesDictionary = {}
+        
+        ''' seperate filename '''
+        startIndex = fileData.rfind('/') + 1
+        fileName = fileData[startIndex:]
+   
+        
+        ''' put fileName into temporary dictionary '''
+        #if 'Stationsmetadaten' in fileName:
+        namesDictionary["name"] = fileName
+        
+        ''' add filename to list '''
+        fileNameList.append(namesDictionary)
+        
+        
+    return fileNameList
+
+''' function: creates a list of all folders in an folder
+    Called in:?
+'''
+def createFolderNameList(folderPath):
+    
+    ''' create emtpy list for folder names '''
+    folderNames = []
+    
+    ''' read all folder names in the folderPath and add it to list folderNames '''
+    for name in os.listdir(folderPath):
+        folderNames.append(name)
+        
+    return folderNames
+
+''' test '''
  
-  
-getStations("/home/andie/Dropbox/Anita_Andreas/2015 Wetterkarte/tageswerte_00001_19370101_19860630_hist/", "Stationsmetadaten_klima_stationen_00001_19370101_19860630.txt")
-
-Stations_ID; 
-Mess_Datum; 
-Qualitaets_Niveau; 
-LUFTTEMPERATUR;
-DAMPFDRUCK;
-BEDECKUNGSGRAD;
-LUFTDRUCK_STATIONSHOEHE;
-REL_FEUCHTE; 
-WINDGESCHWINDIGKEIT; 
-LUFTTEMPERATUR_MAXIMUM;
-LUFTTEMPERATUR_MINIMUM;
-LUFTTEMP_AM_ERDB_MINIMUM; 
-WINDSPITZE_MAXIMUM; 
-NIEDERSCHLAGSHOEHE;
-NIEDERSCHLAGSHOEHE_IND;
-SONNENSCHEINDAUER; 
-SCHNEEHOEHE;
-eor
+fileName = 'Stationsmetadaten_klima_stationen_00001_19370101_19860630.txt'
+filePath = 'data/tageswerte_00001_19370101_19860630_hist/'
 
 
-
-
-
-#def createFileNameList(folderPath):
+temp = createFolderNameList('data')
+#test = []
+for t in temp:
+    print t
     
-    #''' create List of file names in folder '''
-    #fileNameList = []
-    
-    
-    
-    #for fileData in glob.glob(os.path.join(folderPath, '*.txt')):
-        #''' create temporary dictionary '''
-        #namesDictionary = {}
-        
-        #''' seperate filename '''
-        #startIndex = fileData.rfind('/') + 1
-        #fileName = fileData[startIndex:]
-        ##print fileName
-        
-        #width, height, pixelSize = getResolution(folderPath, fileName)
-
-        
-        #''' get kb id '''        
-        #kb = fileName[:4]
-        
-        #''' get kb year '''        
-        #end = fileName.rfind('.')
-        #year = fileName[5:end]
-        
-        #''' put fileName, id and year into temporary dictionary '''
-        #namesDictionary["name"] = fileName
-        #namesDictionary["id"] = kb
-        #namesDictionary["year"] = year
-        #namesDictionary["width"] = width
-        #namesDictionary["height"] = height
-        #namesDictionary["pixelSize"] = pixelSize
-
-        #''' add filename to list '''
-        #fileNameList.append(namesDictionary)
-        
-        
-    #return fileNameList
+    test = createFileNameList('data/' + t )
+    print test
+    for i in test:
+        if 'Stationsmetadaten' in i['name']:
+            print i['name']
+    #test.append(createFileNameList(t))
+#print test
