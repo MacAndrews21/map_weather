@@ -54,6 +54,28 @@ def getStations(filePath, fileName):
   
 getStations("/home/andie/Dropbox/Anita_Andreas/2015 Wetterkarte/tageswerte_00001_19370101_19860630_hist/", "Stationsmetadaten_klima_stationen_00001_19370101_19860630.txt")
 
+Stations_ID; 
+Mess_Datum; 
+Qualitaets_Niveau; 
+LUFTTEMPERATUR;
+DAMPFDRUCK;
+BEDECKUNGSGRAD;
+LUFTDRUCK_STATIONSHOEHE;
+REL_FEUCHTE; 
+WINDGESCHWINDIGKEIT; 
+LUFTTEMPERATUR_MAXIMUM;
+LUFTTEMPERATUR_MINIMUM;
+LUFTTEMP_AM_ERDB_MINIMUM; 
+WINDSPITZE_MAXIMUM; 
+NIEDERSCHLAGSHOEHE;
+NIEDERSCHLAGSHOEHE_IND;
+SONNENSCHEINDAUER; 
+SCHNEEHOEHE;
+eor
+
+
+
+
 
 #def createFileNameList(folderPath):
     
