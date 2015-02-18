@@ -5,14 +5,38 @@ import sys
 import functions as fs
 import postgres as po
 
-names = fs.createFileNameList("/home/andreas/Projekte/test-data/")
+#names = fs.createFileNameList("/home/andreas/Projekte/test-data/")
 
-#print len(names)
-#print names[0]
+temp = fs.createFolderNameList('data')
+#test = []
+#for t in temp:
+    #print t
+    #print ''
+    
+test = fs.createFileNameList('data/meta/')
+#print test
+#print ''
+allDataList = []
+for i in test:
+    if 'Stationsmetadaten' in i['name']:
+        #print i['name']
+        data = fs.getStations('data/meta/', i['name'])
+        #print len(data)
+    else:
+        data = None
+    
+    if data != None:
+        for s in range(len(data)):
+            #print data[s]['Geogr.Breite']
+            pass
+        pass
 
-#res = fs.getResolution("/home/andreas/Projekte/test-data/", "1011_1956.tif")
+    allDataList.append(data)
+    #test.append(data)
+#print test
+for a in range(len(allDataList)):
+    for b in range(len(allDataList[a])):
+        print allDataList[a][b]['Stations_id'] ,allDataList[a][b]['Stationsname'] ,allDataList[a][b]['Stationshoehe'] ,allDataList[a][b]['Geogr.Breite'] ,allDataList[a][b]['Geogr.Laenge'] ,allDataList[a][b]['von_datum'] ,allDataList[a][b]['bis_datum'] ,allDataList[a][b]['Stationsname']
+        #pass
+        po.into_db(allDataList[a][b]['Stations_id'] ,allDataList[a][b]['Stationshoehe'] ,allDataList[a][b]['Geogr.Breite'] ,allDataList[a][b]['Geogr.Laenge'] ,allDataList[a][b]['von_datum'] ,allDataList[a][b]['bis_datum'] ,allDataList[a][b]['Stationsname'])
 
-for name in names:
-    #print name['id']
-    "{'name': '1011_1956.tif', 'height': 4742, 'width': 3161, 'year': '1956', 'pixelSize': 0.5061063788453273, 'id': '1011'}"
-    po.into(name['id'], name['year'], name['width'],name['height'], name['pixelSize'])

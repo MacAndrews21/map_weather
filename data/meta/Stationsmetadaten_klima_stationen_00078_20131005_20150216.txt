@@ -1,0 +1,4 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+78;45;52.4700;7.9408;19610102;19820331;Alfhausen
+78;48;52.5036;7.9472;19820401;20041031;Alfhausen
+78;65;52.4847;7.9117;20041101;;Alfhausen

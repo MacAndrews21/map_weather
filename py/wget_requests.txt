@@ -1,0 +1,1 @@
+wget ftp://ftp-cdc.dwd.de/pub/CDC/observations_germany/climate/daily/kl/recent/tageswerte_KL_00{001..100}_akt.zip

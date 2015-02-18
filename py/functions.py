@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #import cv2
 import glob
 import os
@@ -13,10 +14,10 @@ import zipfile
     the original file will not be overwritten
     Called in: getStations()
 '''
-def cleanFile(filePath, fileName):
+def cleanFile(csv, i):
    
     ''' open file as csv '''
-    csv = open(filePath + fileName, 'r')
+    #csv = open(filePath + fileName, 'r')
     csvRead = csv.read()
     
     ''' replace alls ' ' with '' to clean up the file '''
@@ -29,7 +30,7 @@ def cleanFile(filePath, fileName):
         this file will be overwritten by the next file
         => maybe it should be deleted after finish
     '''
-    writeFile = open('py/temp.txt','w')
+    writeFile = open('py/temp_' + str(i) + '.txt','w')
     writeFile.write(txt)
     writeFile.close() 
 
@@ -37,9 +38,9 @@ def cleanFile(filePath, fileName):
     calls the temporary file
     Called in: getStations()
 '''    
-def getFirstLine():
+def getFirstLine(filePath, fileName):
     
-    with open('py/temp.txt', 'rb') as f:
+    with open(filePath + fileName, 'rb') as f:
         firstLine = f.readline()
         
         firstLineList = []
@@ -51,18 +52,46 @@ def getFirstLine():
                 firstLineList.append(index)
     
     return firstLineList
+
+
+def readInZIP(folderPath):
+    
+    zfile = zipfile.ZipFile(folderPath)
+    for finfo in zfile.namelist():
+        #print finfo[0]
+        #print finfo
+        if 'Stationsmetadaten' in finfo:
+            data = zfile.open(finfo)
+            #temp = data.readlines()
+
+            csvRead = data.read()
+    
+            ''' replace alls ' ' with '' to clean up the file '''
+            txt = csvRead.replace(' ', '')
+            
+            txt_unicode = txt.decode("iso-8859-1")
+            
+            txt_utf8 = txt_unicode.encode("utf-8")
+            
+            writeFile = open('data/meta/' + finfo,'w')
+            
+            writeFile.write(txt_utf8)
+            #writeFile.write('hallooooo')
+            writeFile.close() 
+
+
     
 ''' function: read row by row data and put into an dictionary 
     Called in: ? 
 '''
 def getStations(filePath, fileName):
     
-    cleanFile(filePath, fileName)
+    #cleanFile(filePath, fileName)
     
-    firstLineList = getFirstLine()
+    firstLineList = getFirstLine(filePath, fileName)
 
     
-    with open('py/temp.txt', "rb") as csvfile:
+    with open(filePath + fileName, "rb") as csvfile:
         reader = csv.DictReader(csvfile, delimiter = ';')
         
         rowList = []
@@ -76,7 +105,8 @@ def getStations(filePath, fileName):
             
             rowList.append(temp)
            
-        print rowList
+        #print rowList
+        return rowList
 
 ''' function: creates a list of all text files in an folder
     except of the ones that do not start with 'Stationsmetadaten'
@@ -106,6 +136,7 @@ def createFileNameList(folderPath):
         
     return fileNameList
 
+
 ''' function: creates a list of all folders in an folder
     Called in:?
 '''
@@ -120,27 +151,11 @@ def createFolderNameList(folderPath):
         
     return folderNames
 
-''' test '''
- 
-fileName = 'Stationsmetadaten_klima_stationen_00001_19370101_19860630.txt'
-filePath = 'data/tageswerte_00001_19370101_19860630_hist/'
+folder = createFolderNameList('data')
+#print folder
 
+for z in range(len(folder)):
+    if 'zip' in folder[z]:
+        #print folder[z]
+        readInZIP('data/' + folder[z])
 
-temp = createFolderNameList('data')
-#test = []
-for t in temp:
-    print t
-    print ''
-    
-    test = createFileNameList('data/' + t )
-    print test
-    print ''
-    for i in test:
-        if 'Stationsmetadaten' in i['name']:
-            print i['name']
-            data = getStations('data/' + t + '/', i['name'])
-    
-    if data != None:
-        print data
-    #test.append(createFileNameList(t))
-#print test
