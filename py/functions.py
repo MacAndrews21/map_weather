@@ -14,25 +14,21 @@ import zipfile
     the original file will not be overwritten
     Called in: getStations()
 '''
-def cleanFile(csv, i):
-   
-    ''' open file as csv '''
-    #csv = open(filePath + fileName, 'r')
-    csvRead = csv.read()
-    
+def cleanFile(finfo, csvRead, folderPath, tempFolder):
+
+
     ''' replace alls ' ' with '' to clean up the file '''
     txt = csvRead.replace(' ', '')
-    
-    ''' close file '''
-    csv.close()
-    
-    ''' write the file in an clean temporary file 
-        this file will be overwritten by the next file
-        => maybe it should be deleted after finish
-    '''
-    writeFile = open('py/temp_' + str(i) + '.txt','w')
-    writeFile.write(txt)
-    writeFile.close() 
+
+    txt_unicode = txt.decode("iso-8859-1")
+
+    txt_utf8 = txt_unicode.encode("utf-8")
+
+    writeFile = open(folderPath + tempFolder + finfo,'w')
+
+    writeFile.write(txt_utf8)
+    #writeFile.write('hallooooo')
+    writeFile.close()
 
 ''' function: read the first line of the file to get the row names
     calls the temporary file
@@ -54,30 +50,20 @@ def getFirstLine(filePath, fileName):
     return firstLineList
 
 
-def readInZIP(folderPath):
+def readInZIP(folderPath, zipFolderPath):
     
-    zfile = zipfile.ZipFile(folderPath)
+    zfile = zipfile.ZipFile(zipFolderPath)
     for finfo in zfile.namelist():
+        data = zfile.open(finfo)
+        #temp = data.readlines()
+
+        csvRead = data.read()
         #print finfo[0]
         #print finfo
         if 'Stationsmetadaten' in finfo:
-            data = zfile.open(finfo)
-            #temp = data.readlines()
-
-            csvRead = data.read()
-    
-            ''' replace alls ' ' with '' to clean up the file '''
-            txt = csvRead.replace(' ', '')
-            
-            txt_unicode = txt.decode("iso-8859-1")
-            
-            txt_utf8 = txt_unicode.encode("utf-8")
-            
-            writeFile = open('data/meta/' + finfo,'w')
-            
-            writeFile.write(txt_utf8)
-            #writeFile.write('hallooooo')
-            writeFile.close() 
+            cleanFile(finfo, csvRead, folderPath,'station_metadata/')
+        if 'produkt_klima' in finfo:
+            cleanFile(finfo, csvRead, folderPath,'temperatur_data/')
 
 
     
@@ -151,11 +137,13 @@ def createFolderNameList(folderPath):
         
     return folderNames
 
-folder = createFolderNameList('data/recent/')
-#print folder
+def createTempData(folderPath):
+    folder = createFolderNameList(folderPath)
+    #print folder
 
-for z in range(len(folder)):
-    if 'zip' in folder[z]:
-        #print folder[z]
-        readInZIP('data/recent/' + folder[z])
+    for z in range(len(folder)):
+        if 'zip' in folder[z]:
+            #print folder[z]
+            readInZIP(folderPath, folderPath + folder[z])
 
+''' TESTIN '''

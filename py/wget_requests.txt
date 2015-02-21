@@ -3,4 +3,12 @@ wget ftp://ftp-cdc.dwd.de/pub/CDC/observations_germany/climate/daily/kl/recent/t
 
 wget ftp://ftp-cdc.dwd.de/pub/CDC/observations_germany/climate/daily/kl/recent/tageswerte_KL_00{100..102}_akt.zip
 
+
+wget -r -A.zip ftp://ftp-cdc.dwd.de/pub/CDC/observations_germany/climate/daily/kl/recent/
+
+wget -r -A.txt ftp://ftp-cdc.dwd.de/pub/CDC/observations_germany/climate/daily/kl/recent/
+
+
 wget -r -A.zip ftp://ftp-cdc.dwd.de/pub/CDC/observations_germany/climate/daily/kl/historical/
+
+wget -r -A.txt ftp://ftp-cdc.dwd.de/pub/CDC/observations_germany/climate/daily/kl/historical/
