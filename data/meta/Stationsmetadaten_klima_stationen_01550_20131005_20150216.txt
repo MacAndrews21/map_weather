@@ -1,0 +1,4 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+1550;704;47.4939;11.1014;19411201;19500131;Garmisch-Partenkirchen
+1550;704;47.4939;11.1014;19500201;19671227;Garmisch-Partenkirchen
+1550;719;47.4828;11.0622;19671228;;Garmisch-Partenkirchen

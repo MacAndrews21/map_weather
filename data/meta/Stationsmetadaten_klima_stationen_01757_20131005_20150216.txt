@@ -1,0 +1,4 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+1757;2;54.0978;13.4075;18980101;20060831;Greifswald
+1757;2;54.0978;13.4075;20060901;20110903;Greifswald
+1757;2;54.0967;13.4056;20110904;;Greifswald

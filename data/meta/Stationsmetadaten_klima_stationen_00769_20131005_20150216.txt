@@ -1,0 +1,4 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+769;68;52.2839;9.0881;19580922;19781231;Bückeburg
+769;68;52.2839;9.0881;19790101;20070613;Bückeburg
+769;68;52.2817;9.0889;20070614;;Bückeburg

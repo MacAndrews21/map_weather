@@ -1,0 +1,6 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+701;6;53.5683;8.5475;19490101;19490531;Bremerhaven
+701;6;53.5683;8.5475;19490601;19620415;Bremerhaven
+701;6;53.5328;8.5772;19620416;19980609;Bremerhaven
+701;7;53.5331;8.5758;19980610;20150204;Bremerhaven
+701;7;;;20150205;;Bremerhaven

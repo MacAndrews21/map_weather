@@ -1,0 +1,3 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+1300;325;51.2575;8.1692;19370201;19991231;Eslohe
+1300;351;51.2539;8.1561;20020912;;Eslohe

@@ -1,0 +1,3 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+1052;80;52.2172;12.1633;19930501;20070630;DrewitzbeiBurg
+1052;80;52.2169;12.1633;20070701;;DrewitzbeiBurg

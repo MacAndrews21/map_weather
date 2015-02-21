@@ -1,0 +1,4 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+5424;320;51.0167;11.3500;19490401;19680326;Weimar-Schöndorf
+5424;310;51.0183;11.3564;19680327;20070531;Weimar-Schöndorf
+5424;325;51.0178;11.3542;20070601;;Weimar-Schöndorf

@@ -1,0 +1,3 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+6314;308;51.0519;13.3025;18910101;19831231;Nossen
+6314;308;51.0506;13.3006;20041207;;Nossen

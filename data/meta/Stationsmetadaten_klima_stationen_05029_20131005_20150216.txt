@@ -1,0 +1,4 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+5029;396;49.4819;7.0467;19490101;19750514;Tholey
+5029;396;49.4819;7.0467;19750515;20070531;Tholey
+5029;386;49.4739;7.0386;20070601;;Tholey

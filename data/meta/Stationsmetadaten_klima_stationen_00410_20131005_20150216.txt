@@ -1,0 +1,2 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+410;33;52.4042;13.7308;19960501;;Berlin-Kaniswall

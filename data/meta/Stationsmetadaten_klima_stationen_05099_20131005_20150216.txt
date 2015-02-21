@@ -1,0 +1,3 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+5099;144;49.7517;6.6469;17880101;19990131;Trier-Zewen
+5099;132;49.7325;6.6133;20071107;;Trier-Zewen

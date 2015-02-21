@@ -1,0 +1,2 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+6264;457;51.4142;8.6497;20020101;;Brilon-Thülen

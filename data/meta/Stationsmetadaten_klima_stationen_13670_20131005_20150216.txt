@@ -1,0 +1,2 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+13670;25;51.5086;6.7014;20070201;;Duisburg-Baerl

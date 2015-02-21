@@ -1,0 +1,6 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+1379;56;54.7853;9.4219;19560901;19581123;Flensburg(Schäferhaus)
+1379;34;54.7858;9.4483;19581124;19611203;Flensburg(Schäferhaus)
+1379;35;54.7897;9.4450;19611204;19620417;Flensburg(Schäferhaus)
+1379;32;54.7747;9.4367;19620418;19630430;Flensburg(Schäferhaus)
+1379;41;54.7736;9.3753;19630501;;Flensburg(Schäferhaus)

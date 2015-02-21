@@ -1,0 +1,3 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+4508;657;50.2967;6.4194;19510101;20040731;Schneifelforsthaus
+4508;649;50.2986;6.4164;20040801;;Schneifelforsthaus

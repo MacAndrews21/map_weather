@@ -1,0 +1,2 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+13700;205;51.3328;7.3408;20070801;;Gevelsberg-Oberbröking

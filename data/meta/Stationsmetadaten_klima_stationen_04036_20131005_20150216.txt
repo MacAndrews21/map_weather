@@ -1,0 +1,6 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+4036;166;51.3842;11.6050;19530601;19771231;Querfurt-MühleLodersleben
+4036;166;51.3800;11.5883;19780101;19830531;Querfurt-MühleLodersleben
+4036;190;51.3742;11.5836;19830601;20070228;Querfurt-MühleLodersleben
+4036;204;51.3908;11.5428;20070301;20070630;Querfurt-MühleLodersleben
+4036;204;51.3894;11.5411;20070701;;Querfurt-MühleLodersleben

@@ -1,0 +1,5 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+4271;4;54.1800;12.0806;18810101;19490930;Rostock-Warnemünde
+4271;4;54.1800;12.0806;19491001;19501231;Rostock-Warnemünde
+4271;4;54.1800;12.0806;19510101;19510531;Rostock-Warnemünde
+4271;4;54.1800;12.0803;19510601;;Rostock-Warnemünde

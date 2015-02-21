@@ -1,0 +1,2 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+7412;340;50.0081;9.4239;20060301;;Neuhütten/Spessart

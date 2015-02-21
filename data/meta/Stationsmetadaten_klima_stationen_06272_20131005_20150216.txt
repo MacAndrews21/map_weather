@@ -1,0 +1,2 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+6272;283;50.8422;10.2514;20010327;;MoorgrundGräfen-Nitzendorf

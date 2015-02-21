@@ -1,0 +1,5 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+3158;12;52.5500;14.5500;19660101;19741231;Manschnow
+3158;12;52.5483;14.5475;19850101;20061018;Manschnow
+3158;12;52.5483;14.5475;20061019;20080305;Manschnow
+3158;12;52.5467;14.5450;20080306;;Manschnow

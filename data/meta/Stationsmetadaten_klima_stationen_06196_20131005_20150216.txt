@@ -1,0 +1,3 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+6196;576;50.1511;12.0569;20000901;20011130;Selb-Spielberg
+6196;610;50.1586;12.0389;20110407;;Selb-Spielberg

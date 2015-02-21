@@ -1,0 +1,3 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+617;45;51.8667;6.8333;19830701;20040531;BorkeninWestfalen
+617;48;51.8728;6.8861;20040601;;BorkeninWestfalen

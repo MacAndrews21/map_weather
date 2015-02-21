@@ -1,0 +1,7 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+722;1140;;;18360101;18950930;Brocken
+722;1140;;;18951001;19131010;Brocken
+722;1140;;;19131011;19391231;Brocken
+722;1142;51.7986;10.6181;19400101;19450419;Brocken
+722;1142;;;19470428;19970829;Brocken
+722;1134;51.7986;10.6181;19970830;;Brocken

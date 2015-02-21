@@ -1,0 +1,4 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+3668;310;49.4958;11.0819;19490101;19550406;Nürnberg
+3668;310;49.4958;11.0819;19550407;19951204;Nürnberg
+3668;314;49.5031;11.0547;19951205;;Nürnberg

@@ -1,0 +1,4 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+4560;305;50.5061;9.1233;19340101;19740421;Schotten
+4560;315;50.5078;9.1356;19740422;20050131;Schotten
+4560;265;50.4925;9.1228;20050201;;Schotten

@@ -1,0 +1,3 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+2961;5;54.4986;10.2733;19700910;19811231;LeuchtturmKiel
+2961;5;54.5000;10.2783;19820101;;LeuchtturmKiel

@@ -151,11 +151,11 @@ def createFolderNameList(folderPath):
         
     return folderNames
 
-folder = createFolderNameList('data')
+folder = createFolderNameList('data/recent/')
 #print folder
 
 for z in range(len(folder)):
     if 'zip' in folder[z]:
         #print folder[z]
-        readInZIP('data/' + folder[z])
+        readInZIP('data/recent/' + folder[z])
 

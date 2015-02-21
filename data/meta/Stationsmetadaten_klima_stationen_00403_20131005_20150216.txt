@@ -1,0 +1,3 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+403;51;52.4639;13.3017;19500101;19970731;Berlin-Dahlem(FU)
+403;51;52.4578;13.3103;19970801;;Berlin-Dahlem(FU)

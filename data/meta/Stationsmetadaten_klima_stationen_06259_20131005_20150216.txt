@@ -1,0 +1,2 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+6259;523;49.0208;9.6031;20010815;;Großerlach-Mannenweiler

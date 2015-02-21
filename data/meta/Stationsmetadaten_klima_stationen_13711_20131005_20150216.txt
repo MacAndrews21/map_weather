@@ -1,0 +1,2 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+13711;280;50.6811;11.5147;20070901;;Krölpa-Rockendorf

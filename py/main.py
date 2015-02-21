@@ -7,7 +7,7 @@ import postgres as po
 
 #names = fs.createFileNameList("/home/andreas/Projekte/test-data/")
 
-temp = fs.createFolderNameList('data')
+#temp = fs.createFolderNameList('data')
 #test = []
 #for t in temp:
     #print t

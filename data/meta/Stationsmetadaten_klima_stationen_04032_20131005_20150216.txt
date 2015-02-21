@@ -1,0 +1,5 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+4032;123;51.7825;11.1425;19480601;19991231;Quedlinburg
+4032;123;51.7825;11.1425;20060516;20061130;Quedlinburg
+4032;142;51.7967;11.1333;20061201;20070630;Quedlinburg
+4032;142;51.7953;11.1317;20070701;;Quedlinburg

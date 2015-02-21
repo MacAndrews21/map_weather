@@ -1,0 +1,4 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+5541;263;50.1311;8.3178;19870601;19930830;Wiesbaden-Auringen
+5541;263;50.1325;8.3175;19930831;20040731;Wiesbaden-Auringen
+5541;263;50.1319;8.3167;20040801;;Wiesbaden-Auringen

@@ -1,0 +1,4 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+4466;4;54.5068;9.5393;19461001;19540822;Schleswig
+4466;43;54.5275;9.5486;19540823;19861021;Schleswig
+4466;43;54.5275;9.5486;19861022;;Schleswig

@@ -1,0 +1,5 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+5705;268;49.8056;9.9067;19461201;19500630;Würzburg
+5705;268;49.8056;9.9067;19500701;19810405;Würzburg
+5705;268;49.7717;9.9586;19810406;20060606;Würzburg
+5705;268;49.7703;9.9578;20060607;;Würzburg

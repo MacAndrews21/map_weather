@@ -1,0 +1,5 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+3442;144;50.3694;8.7431;19370101;19780531;Nauheim,Bad
+3442;160;50.3728;8.7383;19780601;19940131;Nauheim,Bad
+3442;142;50.3697;8.7656;19940201;20010402;Nauheim,Bad
+3442;149;50.3575;8.7506;20040325;;Nauheim,Bad

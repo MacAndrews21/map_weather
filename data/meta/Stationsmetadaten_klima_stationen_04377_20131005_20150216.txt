@@ -1,0 +1,4 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+4377;520;50.3286;9.9819;19640701;19850512;Sandberg
+4377;555;50.3644;10.0178;19850513;20050831;Sandberg
+4377;510;50.3517;10.0031;20050901;;Sandberg

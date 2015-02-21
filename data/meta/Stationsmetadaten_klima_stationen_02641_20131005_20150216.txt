@@ -1,0 +1,3 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+2641;85;51.5189;12.9061;19940926;20080731;KlitzschenbeiTorgau
+2641;85;51.5189;12.9061;20080801;;KlitzschenbeiTorgau

@@ -1,0 +1,2 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+3857;885;47.6358;10.3889;19931001;;Oy-Mittelberg-Petersthal

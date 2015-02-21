@@ -1,0 +1,5 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+5731;383;47.6608;8.3633;19540824;19750220;Wutöschingen-Ofteringen
+5731;383;47.6619;8.3656;19750221;19940307;Wutöschingen-Ofteringen
+5731;398;47.6781;8.3800;19940308;20060724;Wutöschingen-Ofteringen
+5731;398;47.6782;8.3801;20060725;;Wutöschingen-Ofteringen

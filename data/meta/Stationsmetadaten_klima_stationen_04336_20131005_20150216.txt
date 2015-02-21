@@ -1,0 +1,5 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+4336;323;49.2197;7.1122;19490101;19550831;Saarbrücken-Ensheim
+4336;323;49.2197;7.1122;19550901;19890228;Saarbrücken-Ensheim
+4336;319;49.2197;7.1122;19890301;19891011;Saarbrücken-Ensheim
+4336;320;49.2128;7.1075;19891012;;Saarbrücken-Ensheim

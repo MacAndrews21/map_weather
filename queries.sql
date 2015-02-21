@@ -1,0 +1,1 @@
+SELECT COUNT(stationsname), stationsname FROM recent GROUP BY stationsname

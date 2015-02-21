@@ -1,0 +1,5 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+4928;315;48.8294;9.2017;19570101;19840831;Stuttgart(Schnarrenberg)
+4928;314;48.8294;9.2011;19840901;19990331;Stuttgart(Schnarrenberg)
+4928;314;48.8294;9.2011;19990401;20061016;Stuttgart(Schnarrenberg)
+4928;314;48.8281;9.2000;20061017;;Stuttgart(Schnarrenberg)

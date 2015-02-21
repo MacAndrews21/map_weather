@@ -54,6 +54,7 @@ def into_db(stations_id,stationshoehe,geogr_breite,geogr_laenge,von_datum,bis_da
     stationsname = stationsname.replace( 'ß', '[ss]')
     stationsname = stationsname.replace( 'ä', '[ae]')
     stationsname = stationsname.replace( 'ö', '[oe]')
+    stationsname = stationsname.replace( 'ü', '[ue]')
     stationsname = stationsname.replace( 'Ä', '[AE]')
     stationsname = stationsname.replace( 'Ö', '[OE]')
     stationsname = stationsname.replace( 'Ü', '[UE]')
@@ -62,7 +63,7 @@ def into_db(stations_id,stationshoehe,geogr_breite,geogr_laenge,von_datum,bis_da
     try:
         con = psy.connect(string)
         cursor = con.cursor()    
-        cursor.execute("""INSERT INTO test(stations_id,stationshoehe,geogr_breite,geogr_laenge,stationsname,von_datum,bis_datum ) VALUES (%s, %s, %s, %s, %s, %s, %s)""",(stations_id,stationshoehe,geogr_breite,geogr_laenge,stationsname,von_datum,bis_datum,))
+        cursor.execute("""INSERT INTO recent(stations_id,stationshoehe,geogr_breite,geogr_laenge,stationsname,von_datum,bis_datum ) VALUES (%s, %s, %s, %s, %s, %s, %s)""",(stations_id,stationshoehe,geogr_breite,geogr_laenge,stationsname,von_datum,bis_datum,))
         con.commit()
         print 'SUCCESS'
     except:

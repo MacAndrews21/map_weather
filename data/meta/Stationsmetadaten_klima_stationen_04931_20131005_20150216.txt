@@ -1,0 +1,6 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+4931;405;48.6925;9.1950;19490101;19651231;Stuttgart-Echterdingen
+4931;398;48.6917;9.1992;19660101;19730531;Stuttgart-Echterdingen
+4931;373;48.6889;9.2211;19730601;19950930;Stuttgart-Echterdingen
+4931;371;48.6892;9.2253;19951001;20081116;Stuttgart-Echterdingen
+4931;371;48.6883;9.2235;20081117;;Stuttgart-Echterdingen

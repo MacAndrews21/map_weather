@@ -1,0 +1,2 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+15207;317;51.2833;9.3589;20130619;;Schauenburg-Elgershausen

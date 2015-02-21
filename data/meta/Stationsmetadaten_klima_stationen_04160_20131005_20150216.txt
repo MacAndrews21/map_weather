@@ -1,0 +1,4 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+4160;405;48.7675;8.9414;19360101;19750131;Renningen-IhingerHof
+4160;405;48.7675;8.9414;19750201;20020228;Renningen-IhingerHof
+4160;478;48.7425;8.9239;20020301;;Renningen-IhingerHof

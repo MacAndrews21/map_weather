@@ -1,0 +1,4 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+5856;476;48.5453;13.3533;19970103;20060927;Fürstenzell
+5856;476;48.5450;13.3528;20060928;20150202;Fürstenzell
+5856;476;;;20150203;;Fürstenzell

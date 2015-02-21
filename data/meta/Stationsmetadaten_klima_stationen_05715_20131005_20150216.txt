@@ -1,0 +1,5 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+5715;52;52.4167;9.4500;18910101;19750630;Wunstorf
+5715;57;52.4631;9.4286;19750701;20061126;Wunstorf
+5715;57;52.4617;9.4269;20061127;20091231;Wunstorf
+5715;57;52.4603;9.4311;20100101;;Wunstorf

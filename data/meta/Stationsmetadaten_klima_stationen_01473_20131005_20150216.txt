@@ -1,0 +1,3 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+1473;406;49.2025;11.3272;19530616;20051231;Freystadt-Oberndorf
+1473;436;49.1781;11.3736;20060101;;Freystadt-Oberndorf

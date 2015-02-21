@@ -1,0 +1,3 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+6337;59;51.7683;7.5203;20030811;20130625;Lüdinghausen-Brochtrup
+6337;59;51.7664;7.5194;20130626;;Lüdinghausen-Brochtrup

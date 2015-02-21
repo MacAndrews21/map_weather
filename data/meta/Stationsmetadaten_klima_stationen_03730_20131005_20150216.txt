@@ -1,0 +1,5 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+3730;810;47.4033;10.2789;19380301;19530531;Oberstdorf
+3730;810;47.4033;10.2789;19530601;19940716;Oberstdorf
+3730;806;47.3989;10.2769;19940717;20070605;Oberstdorf
+3730;806;47.3983;10.2758;20070606;;Oberstdorf

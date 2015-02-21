@@ -1,0 +1,5 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+3034;513;50.4531;11.6503;19540101;19600331;Lobenstein,Bad
+3034;516;50.4514;11.6533;19610401;19670728;Lobenstein,Bad
+3034;510;50.4456;11.6511;19670729;19690529;Lobenstein,Bad
+3034;500;50.4503;11.6347;19690530;;Lobenstein,Bad

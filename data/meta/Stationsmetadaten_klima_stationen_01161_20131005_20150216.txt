@@ -1,0 +1,6 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+1161;397;48.8894;11.1675;19210101;19660831;Eichstätt-Landershofen
+1161;390;48.8906;11.1722;19660901;19670930;Eichstätt-Landershofen
+1161;403;48.8972;11.1733;19671001;19671130;Eichstätt-Landershofen
+1161;397;48.8975;11.1747;19671201;20000630;Eichstätt-Landershofen
+1161;384;48.8778;11.2347;20040707;;Eichstätt-Landershofen

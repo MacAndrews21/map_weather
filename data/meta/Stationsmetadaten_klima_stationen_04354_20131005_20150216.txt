@@ -1,0 +1,4 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+4354;455;48.7825;13.3164;19850901;19881012;Saldenburg-Entschenreuth
+4354;457;48.7839;13.3158;19881013;20051231;Saldenburg-Entschenreuth
+4354;456;48.7831;13.3144;20060101;;Saldenburg-Entschenreuth

@@ -1,0 +1,4 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+4063;54;52.4311;8.6103;19491101;19821031;Rahden-Kleinendorf
+4063;42;52.4467;8.5719;19821101;20141022;Rahden-Kleinendorf
+4063;41;52.4461;8.5906;20141023;;Rahden-Kleinendorf

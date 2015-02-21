@@ -1,0 +1,4 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+2252;245;50.9017;14.8172;18810101;19600630;Bertsdorf-Hörnitz
+2252;270;50.9006;14.7475;19941124;20080731;Bertsdorf-Hörnitz
+2252;270;50.8992;14.7456;20080801;;Bertsdorf-Hörnitz

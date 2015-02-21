@@ -1,0 +1,8 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+4287;425;49.3811;10.1853;18941001;19470606;RothenburgobderTauber
+4287;438;;;19470607;19550620;RothenburgobderTauber
+4287;425;49.3728;10.1875;19550621;19740630;RothenburgobderTauber
+4287;421;49.3769;10.1958;19740701;19820930;RothenburgobderTauber
+4287;406;49.3839;10.1758;19821001;20041231;RothenburgobderTauber
+4287;412;49.3844;10.1792;20050101;20081111;RothenburgobderTauber
+4287;415;49.3847;10.1731;20081112;;RothenburgobderTauber

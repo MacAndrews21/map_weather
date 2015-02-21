@@ -1,0 +1,5 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+2039;278;51.8831;10.5711;19270101;19620423;Harzburg,Bad
+2039;260;51.8858;10.5669;19620424;19900930;Harzburg,Bad
+2039;269;51.8853;10.5447;19901001;20061031;Harzburg,Bad
+2039;201;51.9000;10.5700;20061101;;Harzburg,Bad

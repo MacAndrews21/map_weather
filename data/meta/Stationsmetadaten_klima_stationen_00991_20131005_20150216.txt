@@ -1,0 +1,6 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+991;350;50.8994;13.6711;19100101;19570930;Dippoldiswalde-Reinberg
+991;356;50.9033;13.6717;19571001;19930331;Dippoldiswalde-Reinberg
+991;350;50.9017;13.6703;19930401;20040912;Dippoldiswalde-Reinberg
+991;365;50.9181;13.7147;20040913;20080731;Dippoldiswalde-Reinberg
+991;365;50.9167;13.7128;20080801;;Dippoldiswalde-Reinberg

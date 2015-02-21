@@ -1,0 +1,3 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+4548;629;50.1956;12.0892;19930322;20070630;Selb/Oberfranken-Lauterbach
+4548;609;50.2044;12.1433;20070701;;Selb/Oberfranken-Lauterbach

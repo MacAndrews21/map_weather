@@ -1,0 +1,5 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+191;234;49.9694;9.9108;18840101;19860331;Arnstein-Müdesheim
+191;220;;;19860401;19860826;Arnstein-Müdesheim
+191;215;49.9692;9.9108;19860827;20050228;Arnstein-Müdesheim
+191;220;49.9694;9.9111;20050301;;Arnstein-Müdesheim

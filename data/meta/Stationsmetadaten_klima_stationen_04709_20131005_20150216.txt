@@ -1,0 +1,6 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+4709;440;49.9303;7.5178;19470301;19591231;Simmern-Wahlbach
+4709;426;49.9322;7.5161;19600101;19790331;Simmern-Wahlbach
+4709;440;50.0000;7.5856;19790401;19930426;Simmern-Wahlbach
+4709;437;50.0019;7.5972;19930427;20111031;Simmern-Wahlbach
+4709;445;49.9994;7.5981;20111101;;Simmern-Wahlbach

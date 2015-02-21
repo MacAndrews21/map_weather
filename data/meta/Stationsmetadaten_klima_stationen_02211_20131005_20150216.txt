@@ -1,0 +1,4 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+2211;290;50.7381;7.6503;19360401;19541130;Hilgenroth
+2211;290;50.7381;7.6497;19541201;20000817;Hilgenroth
+2211;295;50.7369;7.6525;20000818;;Hilgenroth

@@ -1,0 +1,3 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+1424;107;50.1256;8.6536;19850101;20080731;Frankfurt/Main-Westend
+1424;124;50.1267;8.6692;20080801;;Frankfurt/Main-Westend

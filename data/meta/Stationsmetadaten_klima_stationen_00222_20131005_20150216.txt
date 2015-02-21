@@ -1,0 +1,4 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+222;391;50.5917;12.7153;18810101;20080701;Aue
+222;387;50.5919;12.7156;20080702;20080731;Aue
+222;387;50.5906;12.7139;20080801;;Aue

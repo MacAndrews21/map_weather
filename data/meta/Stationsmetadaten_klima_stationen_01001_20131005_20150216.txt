@@ -1,0 +1,7 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+1001;96;51.6372;13.5706;18910101;19460731;Doberlug-Kirchhain
+1001;96;51.6372;13.5706;19460801;19490630;Doberlug-Kirchhain
+1001;98;51.6358;13.5822;19490701;19680124;Doberlug-Kirchhain
+1001;97;51.6467;13.5767;19680125;19770228;Doberlug-Kirchhain
+1001;97;51.6467;13.5767;19770301;20051111;Doberlug-Kirchhain
+1001;97;51.6450;13.5744;20051112;;Doberlug-Kirchhain

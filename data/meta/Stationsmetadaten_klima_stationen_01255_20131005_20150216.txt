@@ -1,0 +1,4 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+1255;239;49.1669;8.8517;18850210;19880131;Eppingen-Elsenz
+1255;218;;;19880201;20020822;Eppingen-Elsenz
+1255;220;49.1664;8.8522;20020823;;Eppingen-Elsenz

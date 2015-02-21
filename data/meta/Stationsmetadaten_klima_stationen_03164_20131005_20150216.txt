@@ -1,0 +1,10 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+3164;234;50.8125;8.7697;19460101;19480131;Cölbe,Kr.Marburg-Biedenkopf
+3164;181;50.8139;8.7742;19480201;19480912;Cölbe,Kr.Marburg-Biedenkopf
+3164;243;50.8169;8.7650;19480913;19601231;Cölbe,Kr.Marburg-Biedenkopf
+3164;238;50.8186;8.7647;19610101;19650531;Cölbe,Kr.Marburg-Biedenkopf
+3164;256;50.8192;8.7606;19650601;19650802;Cölbe,Kr.Marburg-Biedenkopf
+3164;181;50.8142;8.7747;19650803;19840716;Cölbe,Kr.Marburg-Biedenkopf
+3164;195;50.8186;8.7806;19840717;19910117;Cölbe,Kr.Marburg-Biedenkopf
+3164;186;50.8397;8.7614;19930401;20060630;Cölbe,Kr.Marburg-Biedenkopf
+3164;182;50.8489;8.7733;20060701;;Cölbe,Kr.Marburg-Biedenkopf

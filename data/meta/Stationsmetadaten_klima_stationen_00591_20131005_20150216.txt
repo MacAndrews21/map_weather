@@ -1,0 +1,5 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+591;18;53.4314;10.6789;19460301;19460831;Boizenburg
+591;18;53.4314;10.6789;19460901;19461213;Boizenburg
+591;45;53.3931;10.6894;19461214;20110903;Boizenburg
+591;45;53.3908;10.6875;20110904;;Boizenburg

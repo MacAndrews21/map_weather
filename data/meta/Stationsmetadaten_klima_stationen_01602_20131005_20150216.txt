@@ -1,0 +1,5 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+1602;175;48.4058;8.0183;19520301;19700930;Ohlsbach
+1602;185;48.4158;8.0108;19701001;19880614;Ohlsbach
+1602;186;48.4167;8.0125;19880615;20001231;Ohlsbach
+1602;176;48.4328;7.9925;20030226;;Ohlsbach

@@ -1,0 +1,5 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+2601;805;50.2225;8.4478;19360101;19460228;KleinerFeldberg/Taunus
+2601;805;50.2225;8.4478;19460301;19601130;KleinerFeldberg/Taunus
+2601;805;50.2219;8.4494;19601201;20060509;KleinerFeldberg/Taunus
+2601;826;50.2219;8.4469;20060510;;KleinerFeldberg/Taunus

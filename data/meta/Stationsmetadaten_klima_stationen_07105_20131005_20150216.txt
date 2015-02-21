@@ -1,0 +1,2 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+7105;721;47.8347;12.6547;20040902;;Siegsdorf-Höll

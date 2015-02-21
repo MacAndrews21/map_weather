@@ -1,0 +1,4 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+4704;523;47.5906;9.7447;19880501;19980430;Sigmarszell-Zeisertsweiler
+4704;523;47.5914;9.7475;19980501;19980713;Sigmarszell-Zeisertsweiler
+4704;507;47.5775;9.7406;19980714;;Sigmarszell-Zeisertsweiler

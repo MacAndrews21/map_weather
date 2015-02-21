@@ -1,0 +1,7 @@
+Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
+3836;292;50.4608;10.2300;19010101;19720430;Ostheimv.d.Rhön
+3836;315;;;19720501;19880426;Ostheimv.d.Rhön
+3836;315;50.4617;10.2219;19880427;19980630;Ostheimv.d.Rhön
+3836;314;50.4486;10.2239;19980701;20000831;Ostheimv.d.Rhön
+3836;305;50.4589;10.2783;20000901;20010703;Ostheimv.d.Rhön
+3836;312;50.4536;10.2208;20051110;;Ostheimv.d.Rhön
