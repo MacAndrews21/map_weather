@@ -212,8 +212,10 @@ class csvZIP(object):
                                 
                                 if z in i:
                                     if row[i]:
-                                        #xy = re.sub('[ -\?1-9.\?]', '', row[i])
-                                        xy = re.sub(' {2,}', '', row[i])
+                                        xy = row[i]
+                                        
+                                        #xy = re.sub('^[ {1,}\d+]', '', xy)
+                                        xy = re.sub(' {2,}', '', xy)
                                         xy = self.makeUTF8(xy)
                                         #xy = row[i]
                                     else:
@@ -243,7 +245,7 @@ test = m.readZIP()
 #print len(test)
 #print test['Stationsmetadaten_klima_stationen_13711_20131005_20150216.txt']
 for key in test:
-    if 'produkt' in key:
+    if 'meta' in key:
         print test[key]['firstLine']
         #l = len(test[key]['data'])
         #print len(test[key]['data'])
