@@ -91,3 +91,13 @@ SELECT COUNT(stationsname), stationsname FROM recent GROUP BY stationsname
 UPDATE recent SET geom_4326 = (SELECT ST_Point(geogr_laenge, geogr_breite) FROM recent)
 
 SELECT ST_SRID(ST_Point(geogr_laenge, geogr_breite))
+
+
+
+-- SELECT COUNT(stationsname), stationsname FROM recent GROUP BY stationsname
+-- SELECT DISTINCT t1."id", t2."id", t1."stations_id", t2."stations_id",t1."stationsname" AS st1, t2."stationsname" AS st2, t1."von_datum" AS vd1, t2."von_datum" AS vd2, t1."bis_datum" AS bd1, t2."bis_datum" AS bd2  
+-- FROM historical AS t1, recent AS t2 
+-- WHERE (t1."bis_datum" IS NOT NULL AND t2."bis_datum" IS NOT NULL ) AND t1."stationsname" = t2."stationsname"
+-- ORDER BY t1."von_datum"
+-- SELECT * FROM historical WHERE "bis_datum" >= 20080101 AND "bis_datum" <= 20150101 ORDER BY "von_datum"
+SELECT * FROM historical WHERE "bis_datum" >= 20080101 AND "bis_datum" <= 20081231 ORDER BY "von_datum"
