@@ -154,131 +154,114 @@ def createTempData(folderPath):
 '''
 class csvZIP(object):
     
+    ''' init function 
+    '''
     def __init__ (self, zipFolderPath, fileType):
         self.zipFolderPath = zipFolderPath
-        #self.readZIP()
-    #def test(self):
-        #t = self.zipFolderPath + 'XYT'
-        
-        #return t
-        
-    ''' function: this function change all string in utf-8
+        self.fileType = fileType
+
+    ''' function: change characters in utf-8 and 
+        returns the characters
     '''
     def makeUTF8(self, txt):
         txt = txt.decode("iso-8859-1")
         txt = txt.encode("utf-8")
         return txt
-        
+ 
+    ''' function: get strings in the first line of the csv file and store it in a list and 
+        returns the List
+    '''
     def getFirstLine(self, firstLine):
         regex = re.compile('[a-z_\?\.]+', re.IGNORECASE)
         #firstLine = firstLine.lower()
         firstLineList = regex.findall(firstLine)
         
         return firstLineList
-        
+
+    ''' function: open zip file and reads all 'fileType' files
+        returns from each file the first line as a list and the data as a list of dictionaries.
+        first line:     ['row_1', 'row_2']
+        data:           [ {'row_1': 'data_1, 'row_2': 'data_1}
+                         ,{'row_1': 'data_2, 'row_2': 'data_2}
+                         ,{'row_1': 'data_3, 'row_2': 'data_3}
+                        ]
+    '''        
     def readZIP(self):
+        ''' open zip file '''
         zfile = zipfile.ZipFile(self.zipFolderPath)
 
+        ''' dictionary which will be returned '''
         dataDictionary = {}
         
+        ''' go through the files in the zip file '''
         for finfo in zfile.namelist():
-            #temp = data.readlines()
-            temp = {}
-            if fileType in finfo:
-                ''' get the first line of the file '''
-                fileData = zfile.open(finfo, 'r')
-                firstLine = fileData.readline()
-                data = fileData.readlines()
-                #reader = csv.DictReader(fileData, delimiter = ';')
-                fileData.close()
+            
+            ''' temporary dictionary to store the first line list '''
+            tempList = {}
+            
+            ''' if-clause to get only files who ends with 'fileType'''
+            if self.fileType in finfo:
                 
+                ''' get the first line of current file '''
+                fileData = zfile.open(finfo, 'r')
+                firstLine = fileData.readline()              
+                fileData.close()
+                ''' turn first line in utf-8 '''
                 firstLine = self.makeUTF8(firstLine)
                 
-                ''' delete all ' ' between the comma seperated values;  fvl = first line values'''
+                ''' create list of strings in the first line of current file;
+                    delete all ' ' between the comma seperated values;
+                    add firstLineList to temporary dictionary;
+                '''
                 firstLineList = self.getFirstLine(firstLine)
-                temp['firstLine'] = firstLineList
+                tempList['firstLine'] = firstLineList
 
-
+                ''' open current file as comma seperated file (csv)'''
                 with zfile.open(finfo, "r") as csvfile:
                     
+                    ''' read csv-file as dictionary '''
                     reader = csv.DictReader(csvfile, delimiter = ';')
                     
-                    rowList = []
+                    ''' list of rows or rather columns (see description of this function above )'''
+                    dataList = []
                     for row in reader:
-                        temptemp = {}
-                        for i in row:
-                            i = self.makeUTF8(i)
-                            for z in firstLineList:
-                                
-                                if z in i:
-                                    if row[i]:
-                                        xy = row[i]
-                                        
-                                        #xy = re.sub('^[ {1,}\d+]', '', xy)
-                                        xy = re.sub(' {2,}', '', xy)
+                        ''' temporary dictionary to store {'row': 'data'} '''
+                        tempDictionary = {}
+                        for data in row:
+                            ''' turn 'data' in utf-8 '''
+                            data = self.makeUTF8(data)
+                            for z in firstLineList:                               
+                                if z in data:
+                                    if row[data]:
+                                        xy = row[data]
+                                        xy = str(xy).strip()
                                         xy = self.makeUTF8(xy)
-                                        #xy = row[i]
                                     else:
                                         xy = 'none'
-                                    temptemp[z] = xy
-                        rowList.append(temptemp)       
+                                    tempDictionary[z] = xy
+                        dataList.append(tempDictionary)       
 
-                temp['data'] = rowList
+                tempList['data'] = dataList
 
                 ''' add the temporary dictionary to dataDictionary '''
-                dataDictionary[finfo] = temp
+                dataDictionary[finfo] = tempList
                 
                 
         return dataDictionary
-        #return test
-        
-        
-        
-
-        
+   
 fileType = 'txt'
-m = csvZIP('data/recent/tageswerte_KL_13711_akt.zip', fileType) 
-#m = csvZIP('data/recent/tageswerte_KL_03513_akt.zip', fileType) 
+#m = csvZIP('data/recent/tageswerte_KL_13711_akt.zip', fileType) 
+m = csvZIP('data/recent/tageswerte_KL_03513_akt.zip', fileType) 
 
 test = m.readZIP()
-#print test
-#print len(test)
-#print test['Stationsmetadaten_klima_stationen_13711_20131005_20150216.txt']
+
+#print test.keys()
 for key in test:
     if 'meta' in key:
         print test[key]['firstLine']
-        #l = len(test[key]['data'])
-        #print len(test[key]['data'])
-        #for index in range(len(test[key]['data'])):
-            #print test[key]['data'][index][']
-        print test[key]['data'][0]
-        #print test[key]['data'][2]
-        #print test[key]['data'][3]
-    
-        
-        #for row in readerX:
-            #print row
 
-#print test['Stationsmetadaten_klima_stationen_13711_20131005_20150216.txt']['firstLine']
+        print test[key]['data']
 
-#test = m.getFirstLine()
-
-#x = test[7]
-#x = x.decode("iso-8859-1")
-#x = x.encode("utf-8")
-#print x
-
-#print len(test)
-        
-
-#readInZIP('../data/recent/temp', 'data/recent/tageswerte_KL_13711_akt.zip')   
-
-#createTempData('data/recent/')
-        
-        
-        
-        
-        
         
         
         
