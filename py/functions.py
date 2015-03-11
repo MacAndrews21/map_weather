@@ -248,19 +248,24 @@ class csvZIP(object):
                 
                 
         return dataDictionary
-   
-fileType = 'txt'
-#m = csvZIP('data/recent/tageswerte_KL_13711_akt.zip', fileType) 
-m = csvZIP('data/recent/tageswerte_KL_03513_akt.zip', fileType) 
 
-test = m.readZIP()
 
-#print test.keys()
-for key in test:
-    if 'meta' in key:
-        print test[key]['firstLine']
+class readCSV(object):
+    
+    ''' Klassenattribute'''
+    #fileType = 'csv'
+    
+    ''' Initialisierungsmethode '''
+    def __init__(self, csvFileName, fileEnding='csv'):
+        self.csvFileName = csvFileName
+        self.fileEnding = fileEnding
+        
+    def __str__(self):
+        return "FileName: %s \nFileEnding: %s" % (self.csvFileName,self.fileEnding)
+    
+c = readCSV("csvFile.csv", fileEnding='txt')
 
-        print test[key]['data']
+print c        
 
         
         

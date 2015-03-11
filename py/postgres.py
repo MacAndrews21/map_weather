@@ -118,7 +118,8 @@ def into_historical(stations_id,stationshoehe,geogr_breite,geogr_laenge,von_datu
         con = psy.connect(string)
         cursor = con.cursor()
         
-        cursor.execute("""INSERT INTO historical(stations_id,stationshoehe,geogr_breite,geogr_laenge,stationsname,von_datum,bis_datum,geom_4326 ) VALUES (%s, %s, %s, %s, %s, %s, %s, ST_SetSRID(ST_Point(%s,%s),4326))""",(stations_id,stationshoehe,geogr_breite,geogr_laenge,stationsname,von_datum,bis_datum,geogr_laenge,geogr_breite,))
+        cursor.execute("""INSERT INTO historical(stations_id,stationshoehe,geogr_breite,geogr_laenge,stationsname,von_datum,bis_datum,geom_4326 ) \
+            VALUES (%s, %s, %s, %s, %s, %s, %s, ST_SetSRID(ST_Point(%s,%s),4326))""",(stations_id,stationshoehe,geogr_breite,geogr_laenge,stationsname,von_datum,bis_datum,geogr_laenge,geogr_breite,))
         #cursor.execute("""INSERT INTO recent(stations_i,stationshoehe,geogr_breite,geogr_laenge,stationsname,von_datum,bis_datum ) VALUES (%s, %s, %s, %s, %s, %s, %s)""",(999,5,99.999,99.999,'hallo_welt',20151223,20153256,))
 
         con.commit()
@@ -137,3 +138,4 @@ def into_historical(stations_id,stationshoehe,geogr_breite,geogr_laenge,von_datu
             cursor.close()
             con.close()
             print "FIN"            
+            
