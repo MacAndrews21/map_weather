@@ -23,3 +23,13 @@ LINE 1: ...811', '11.5147', 'Krölpa-Rockendorf', '20070901', 'HalloWelt...
                                                              ^
 
 
+ERROR:  column "mess_datum" of relation "test" does not exist
+LINE 1: INSERT INTO test(stations_id, mess_datum, qualitaets_niveau,...
+                                      ^
+
+
+ERROR:  invalid input syntax for integer: ""
+LINE 1: ...oehe_ind, sonnenscheindauer, schneehoehe) VALUES ('', NULL,...
+                                                             ^
+
+

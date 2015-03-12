@@ -383,6 +383,9 @@ class readCSV(object):
                                     v = self.makeUTF8(v)
                                     if v == '':
                                         v = 0
+                                    if v == '':
+                                        v = -99999
+                                    
                                 else:
                                     v = None
                                 temporaryDictionary[column] = v
@@ -400,10 +403,11 @@ currentZIP = readCSV(filePath, desiredFileEnding='txt')
 #print currentZIP.columns.keys()
 #print currentZIP.files
 #print currentZIP.allFiles
-
-for fileTitle in currentZIP.files:
-    if 'meta' in fileTitle:
-        po.insertMETADATA(currentZIP.rows[fileTitle])
+po.insertMETADATA(currentZIP)
+#for fileTitle in currentZIP.files:
+    #if 'meta' in fileTitle:
+        #po.insertMETADATA(currentZIP.rows[fileTitle])
+        
         
         #for m_row in currentZIP.rows[fileTitle]:
             #for m_column in m_row:
@@ -419,7 +423,7 @@ for fileTitle in currentZIP.files:
         
         
         
-        
+
         
         
         

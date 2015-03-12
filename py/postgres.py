@@ -146,13 +146,18 @@ def into_historical(stations_id,stationshoehe,geogr_breite,geogr_laenge,von_datu
             
             
             
-def insertMETADATA(thisDictionary):
+def insertMETADATA(zipFile):
     string = "host='localhost' dbname='map_weather_test' user='postgres' password='postgres' "
-    print thisDictionary
+    #print thisDictionary
     try:
         con = psy.connect(string)
         cursor = con.cursor()
-        cursor.executemany("""INSERT INTO historical(stations_id,stationshoehe,geogr_breite,geogr_laenge,stationsname,von_datum,bis_datum) VALUES (%(Stations_id)s, %(Stationshoehe)s, %(Geogr.Breite)s, %(Geogr.Laenge)s, %(Stationsname)s, %(von_datum)s, %(bis_datum)s)""", thisDictionary)
+        for title in zipFile.files:
+            thisDictionary = zipFile.rows[title]
+            if 'meta' in title:
+                cursor.executemany("""INSERT INTO historical(stations_id,stationshoehe,geogr_breite,geogr_laenge,stationsname,von_datum,bis_datum,geom_4326)VALUES (%(Stations_id)s, %(Stationshoehe)s, %(Geogr.Breite)s, %(Geogr.Laenge)s, %(Stationsname)s, %(von_datum)s, %(bis_datum)s, ST_SetSRID(ST_Point(%(Geogr.Laenge)s,%(Geogr.Breite)s),4326) )""", thisDictionary)
+            if 'produkt' in title:
+                cursor.executemany("""INSERT INTO historical_data(stations_id, mess_datum, qualitaets_niveau, lufttemperatur, dampfdruck, bedeckungsgrad, luftdruck_stationshoehe, rel_feuchte, windgeschwindigkeit, lufttemperatur_maximum, lufttemperatur_minimum, lufttemp_am_erdb_minimum, windspitze_maximum, niederschlagshoehe, niederschlagshoehe_ind, sonnenscheindauer, schneehoehe) VALUES (%(Stations_ID)s, %(Mess_Datum)s, %(Qualitaets_Niveau)s, %(LUFTTEMPERATUR)s, %(DAMPFDRUCK)s, %(BEDECKUNGSGRAD)s, %(LUFTDRUCK_STATIONSHOEHE)s, %(REL_FEUCHTE)s,%(WINDGESCHWINDIGKEIT)s, %(LUFTTEMPERATUR_MAXIMUM)s, %(LUFTTEMPERATUR_MINIMUM)s, %(LUFTTEMP_AM_ERDB_MINIMUM)s, %(WINDSPITZE_MAXIMUM)s, %(NIEDERSCHLAGSHOEHE)s, %(NIEDERSCHLAGSHOEHE_IND)s, %(SONNENSCHEINDAUER)s, %(SCHNEEHOEHE)s)""", thisDictionary)
         con.commit()
         print 'SUCESS'
     except psy.Error as e:
@@ -160,10 +165,39 @@ def insertMETADATA(thisDictionary):
         
         log = open('meta_database.log', 'a')
         #log.write(stations_id + ' :: ' + stationsname)
-        log.write(e.pgerror+ '\n\n')
+        log.write(e.pgerror + '\n\n')
         log.close()
     finally:
         if con:
             cursor.close()
             con.close()
             print 'fin'
+            
+            
+            
+            
+            
+            
+
+
+
+                                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                                             
+
+                                                                                                                                                                                                                                                             
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
