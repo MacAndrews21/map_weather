@@ -1,0 +1,25 @@
+ERROR:  invalid input syntax for integer: ""
+LINE 1: ..., '50.6811', '11.5147', 'Krölpa-Rockendorf', '20070901', '')
+                                                                    ^
+
+
+ERROR:  invalid input syntax for integer: ""
+LINE 1: ..., '50.6811', '11.5147', 'Krölpa-Rockendorf', '20070901', '')
+                                                                    ^
+
+
+ERROR:  invalid input syntax for integer: ""
+LINE 1: ..., '50.6811', '11.5147', 'Krölpa-Rockendorf', '20070901', '')
+                                                                    ^
+
+
+ERROR:  invalid input syntax for integer: ""
+LINE 1: ..., '50.6811', '11.5147', 'Krölpa-Rockendorf', '20070901', '')
+                                                                    ^
+
+
+ERROR:  invalid input syntax for integer: "HalloWelt"
+LINE 1: ...811', '11.5147', 'Krölpa-Rockendorf', '20070901', 'HalloWelt...
+                                                             ^
+
+

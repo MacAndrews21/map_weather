@@ -113,14 +113,17 @@ def into_historical(stations_id,stationshoehe,geogr_breite,geogr_laenge,von_datu
     if stationshoehe == '':
         stationshoehe = 0
     
-    print stationsname
+    #print stationsname
     try:
         con = psy.connect(string)
         cursor = con.cursor()
         
-        cursor.execute("""INSERT INTO historical(stations_id,stationshoehe,geogr_breite,geogr_laenge,stationsname,von_datum,bis_datum,geom_4326 ) \
-            VALUES (%s, %s, %s, %s, %s, %s, %s, ST_SetSRID(ST_Point(%s,%s),4326))""",(stations_id,stationshoehe,geogr_breite,geogr_laenge,stationsname,von_datum,bis_datum,geogr_laenge,geogr_breite,))
+        cursor.execute("""INSERT INTO historical(stations_id,stationshoehe,geogr_breite,geogr_laenge,stationsname,von_datum,bis_datum,geom_4326 ) VALUES (%s, %s, %s, %s, %s, %s, %s, ST_SetSRID(ST_Point(%s,%s),4326))""",(stations_id,stationshoehe,geogr_breite,geogr_laenge,stationsname,von_datum,bis_datum,geogr_laenge,geogr_breite,))
         #cursor.execute("""INSERT INTO recent(stations_i,stationshoehe,geogr_breite,geogr_laenge,stationsname,von_datum,bis_datum ) VALUES (%s, %s, %s, %s, %s, %s, %s)""",(999,5,99.999,99.999,'hallo_welt',20151223,20153256,))
+        
+        #cur.executemany("""INSERT INTO bar(stations_id,stationshoehe,geogr_breite,geogr_laenge,stationsname,von_datum,bis_datum,geom_4326) \
+            #VALUES (%(Staions_id)s, %(Stationshoehe)s, %(Geogr.Breite)s )""", namedict)
+
 
         con.commit()
         print 'SUCCESS'
@@ -139,3 +142,28 @@ def into_historical(stations_id,stationshoehe,geogr_breite,geogr_laenge,von_datu
             con.close()
             print "FIN"            
             
+            
+            
+            
+            
+def insertMETADATA(thisDictionary):
+    string = "host='localhost' dbname='map_weather_test' user='postgres' password='postgres' "
+    print thisDictionary
+    try:
+        con = psy.connect(string)
+        cursor = con.cursor()
+        cursor.executemany("""INSERT INTO historical(stations_id,stationshoehe,geogr_breite,geogr_laenge,stationsname,von_datum,bis_datum) VALUES (%(Stations_id)s, %(Stationshoehe)s, %(Geogr.Breite)s, %(Geogr.Laenge)s, %(Stationsname)s, %(von_datum)s, %(bis_datum)s)""", thisDictionary)
+        con.commit()
+        print 'SUCESS'
+    except psy.Error as e:
+        print 'NOPE'
+        
+        log = open('meta_database.log', 'a')
+        #log.write(stations_id + ' :: ' + stationsname)
+        log.write(e.pgerror+ '\n\n')
+        log.close()
+    finally:
+        if con:
+            cursor.close()
+            con.close()
+            print 'fin'

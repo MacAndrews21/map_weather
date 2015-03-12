@@ -254,24 +254,164 @@ class readCSV(object):
     
     ''' Klassenattribute'''
     #fileType = 'csv'
+    zfile = ''
     
     ''' Initialisierungsmethode '''
-    def __init__(self, csvFileName, fileEnding='csv'):
+    def __init__(self, csvFileName, desiredFileEnding='csv', ):
         self.csvFileName = csvFileName
-        self.fileEnding = fileEnding
+        self.desiredFileEnding = desiredFileEnding
+        if 'zip' in csvFileName:
+            self.zfile = zipfile.ZipFile(csvFileName)
+            self.columns = self.getColumnsFromZip()
+            self.rows = self.getRowsFromZip()
+            self.allFiles = self.zfile.namelist()
+            self.files = self.columns.keys()
+            
+        elif desiredFileEnding in csvFileName:
+            self.columns = self.getColumns()
+            self.rows = self.getRows()
         
-    def __str__(self):
-        return "FileName: %s \nFileEnding: %s" % (self.csvFileName,self.fileEnding)
+        
     
-c = readCSV("csvFile.csv", fileEnding='txt')
+    ''' __str__-Methode anpassen >> print object'''
+    def __str__(self):
+        return "Noch anzupassen!"
+        #return "FileName: %s \nFileEnding: %s" % (self.csvFileName,self.desiredFileEnding)
+        #for value in self.columns:
+            #for value in rows:
+        #return "%s" % (self.columns)
+        #return "File: \n        %s \nColumns: \n        %s \nRows: \n           %s" % (self.csvFileName, [c for c in self.columns], [r.items() for r in self.rows])
+ 
+    ''' __getitem__-Methode anpassen >> object[i]'''
+    def __getitem__(self, i):
+        
+        if type(i) <> type(0):
+            raise TypeError("Index must be integer!!")
+        if i < 0 or i > 1:
+            raise IndexError("Index out of range!!")
+        elif i == 0:
+            return self.csvFileName
+        elif i == 1:
+            return self.desiredFileEnding
 
-print c        
+    ''' function: change characters in utf-8 and return the characters
+    '''
+    def makeUTF8(self, txt):
+        txt = txt.decode("iso-8859-1")
+        txt = txt.encode("utf-8")
+        return txt
 
+
+    
+    def getColumns(self):
+        
+        data = open(self.csvFileName, 'r')
+        columns = data.readline()
+        data.close()
+        
+        columns = self.makeUTF8(columns)
+        
+        regex = re.compile('[a-z_\?\.]+', re.IGNORECASE)
+
+        columnsList = regex.findall(columns)
+        
+        return columnsList
+
+    def getRows(self):
+        #pass
+        with open(self.csvFileName, "r") as csvFile:
+            
+            reader = csv.DictReader(csvFile, delimiter = ';')
+            
+            dataList = []
+            for row in reader:
+                temporaryDictionary = {}
+                for value in row:
+                    
+                    value = self.makeUTF8(value)
+                    for column in self.columns:
+                        if column in value:
+                            if row[value]:
+                                v = str(row[value])
+                                v = v.strip()
+                                v = self.makeUTF8(v)
+                            else:
+                                v = None
+                            temporaryDictionary[column] = v
+                dataList.append(temporaryDictionary)
         
         
         
+        return dataList
+
+    def getColumnsFromZip(self):
+        columnsDic = {}
         
+        for fileTitle in self.zfile.namelist():
+            if self.desiredFileEnding in fileTitle:
+                data = self.zfile.open(fileTitle, 'r')
+                columns = data.readline()
+                data.close()
+                
+                columns = self.makeUTF8(columns)
+                
+                regex = re.compile('[a-z_\?\.]+', re.IGNORECASE)
+
+                columnsList = regex.findall(columns)
+                columnsDic[fileTitle] = columnsList
         
+        return columnsDic
+
+    def getRowsFromZip(self):
+        dataDic = {}
+        for currentFileTitle in self.columns:
+            with self.zfile.open(currentFileTitle) as csvFile:
+                reader = csv.DictReader(csvFile, delimiter = ';')
+                
+                dataList = []
+                for row in reader:
+                    temporaryDictionary = {}
+                    for value in row:
+                        
+                        value = self.makeUTF8(value) 
+                        for column in self.columns[currentFileTitle]:
+                            if column in value:
+                                if row[value]:
+                                    
+                                    v = str(row[value])        
+                                    v = v.strip()
+                                    v = self.makeUTF8(v)
+                                    if v == '':
+                                        v = 0
+                                else:
+                                    v = None
+                                temporaryDictionary[column] = v
+                    dataList.append(temporaryDictionary)
+            dataDic[currentFileTitle] = dataList
+        return dataDic
+ 
+#filePath = "data/recent/station_metadata/Stationsmetadaten_klima_stationen_00044_20131005_20150216.txt"
+filePath = 'data/historical/tageswerte_00001_19370101_19860630_hist.zip'
+currentZIP = readCSV(filePath, desiredFileEnding='txt')
+
+#print list(c.columns)
+#print c.rows[0]['Stationsname']
+
+#print currentZIP.columns.keys()
+#print currentZIP.files
+#print currentZIP.allFiles
+
+for fileTitle in currentZIP.files:
+    if 'meta' in fileTitle:
+        po.insertMETADATA(currentZIP.rows[fileTitle])
+        
+        #for m_row in currentZIP.rows[fileTitle]:
+            #for m_column in m_row:
+                #print "%s: %s" % (m_column, m_row[m_column])
+    #if 'produkt' in fileTitle:
+        #for p_row in currentZIP.rows[fileTitle]:
+            #for p_column in p_row:    
+                #print "%s: %s" % (p_column, p_row[p_column])
         
         
         
