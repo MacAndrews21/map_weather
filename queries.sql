@@ -101,3 +101,35 @@ SELECT ST_SRID(ST_Point(geogr_laenge, geogr_breite))
 -- ORDER BY t1."von_datum"
 -- SELECT * FROM historical WHERE "bis_datum" >= 20080101 AND "bis_datum" <= 20150101 ORDER BY "von_datum"
 SELECT * FROM historical WHERE "bis_datum" >= 20080101 AND "bis_datum" <= 20081231 ORDER BY "von_datum"
+
+
+SELECT t1."stations_id", t1."stationsname", t1."geom_4326", t2."lufttemperatur", t2."mess_datum" 
+INTO test2 
+FROM historical AS t1, historical_data AS t2 
+WHERE t1."von_datum" <= t2."mess_datum" AND t1."bis_datum" >= t2."mess_datum" AND t1."stations_id" = 1
+ORDER BY t2."mess_datum"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

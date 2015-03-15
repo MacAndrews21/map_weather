@@ -152,102 +152,102 @@ def createTempData(folderPath):
     Called in:?
     Discription: 
 '''
-class csvZIP(object):
+#class csvZIP(object):
     
-    ''' init function 
-    '''
-    def __init__ (self, zipFolderPath, fileType):
-        self.zipFolderPath = zipFolderPath
-        self.fileType = fileType
+    #''' init function 
+    #'''
+    #def __init__ (self, zipFolderPath, fileType):
+        #self.zipFolderPath = zipFolderPath
+        #self.fileType = fileType
 
-    ''' function: change characters in utf-8 and 
-        returns the characters
-    '''
-    def makeUTF8(self, txt):
-        txt = txt.decode("iso-8859-1")
-        txt = txt.encode("utf-8")
-        return txt
+    #''' function: change characters in utf-8 and 
+        #returns the characters
+    #'''
+    #def makeUTF8(self, txt):
+        #txt = txt.decode("iso-8859-1")
+        #txt = txt.encode("utf-8")
+        #return txt
  
-    ''' function: get strings in the first line of the csv file and store it in a list and 
-        returns the List
-    '''
-    def getFirstLine(self, firstLine):
-        regex = re.compile('[a-z_\?\.]+', re.IGNORECASE)
-        #firstLine = firstLine.lower()
-        firstLineList = regex.findall(firstLine)
+    #''' function: get strings in the first line of the csv file and store it in a list and 
+        #returns the List
+    #'''
+    #def getFirstLine(self, firstLine):
+        #regex = re.compile('[a-z_\?\.]+', re.IGNORECASE)
+        ##firstLine = firstLine.lower()
+        #firstLineList = regex.findall(firstLine)
         
-        return firstLineList
+        #return firstLineList
 
-    ''' function: open zip file and reads all 'fileType' files
-        returns from each file the first line as a list and the data as a list of dictionaries.
-        first line:     ['row_1', 'row_2']
-        data:           [ {'row_1': 'data_1, 'row_2': 'data_1}
-                         ,{'row_1': 'data_2, 'row_2': 'data_2}
-                         ,{'row_1': 'data_3, 'row_2': 'data_3}
-                        ]
-    '''        
-    def readZIP(self):
-        ''' open zip file '''
-        zfile = zipfile.ZipFile(self.zipFolderPath)
+    #''' function: open zip file and reads all 'fileType' files
+        #returns from each file the first line as a list and the data as a list of dictionaries.
+        #first line:     ['row_1', 'row_2']
+        #data:           [ {'row_1': 'data_1, 'row_2': 'data_1}
+                         #,{'row_1': 'data_2, 'row_2': 'data_2}
+                         #,{'row_1': 'data_3, 'row_2': 'data_3}
+                        #]
+    #'''        
+    #def readZIP(self):
+        #''' open zip file '''
+        #zfile = zipfile.ZipFile(self.zipFolderPath)
 
-        ''' dictionary which will be returned '''
-        dataDictionary = {}
+        #''' dictionary which will be returned '''
+        #dataDictionary = {}
         
-        ''' go through the files in the zip file '''
-        for finfo in zfile.namelist():
+        #''' go through the files in the zip file '''
+        #for finfo in zfile.namelist():
             
-            ''' temporary dictionary to store the first line list '''
-            tempList = {}
+            #''' temporary dictionary to store the first line list '''
+            #tempList = {}
             
-            ''' if-clause to get only files who ends with 'fileType'''
-            if self.fileType in finfo:
+            #''' if-clause to get only files who ends with 'fileType'''
+            #if self.fileType in finfo:
                 
-                ''' get the first line of current file '''
-                fileData = zfile.open(finfo, 'r')
-                firstLine = fileData.readline()              
-                fileData.close()
-                ''' turn first line in utf-8 '''
-                firstLine = self.makeUTF8(firstLine)
+                #''' get the first line of current file '''
+                #fileData = zfile.open(finfo, 'r')
+                #firstLine = fileData.readline()              
+                #fileData.close()
+                #''' turn first line in utf-8 '''
+                #firstLine = self.makeUTF8(firstLine)
                 
-                ''' create list of strings in the first line of current file;
-                    delete all ' ' between the comma seperated values;
-                    add firstLineList to temporary dictionary;
-                '''
-                firstLineList = self.getFirstLine(firstLine)
-                tempList['firstLine'] = firstLineList
+                #''' create list of strings in the first line of current file;
+                    #delete all ' ' between the comma seperated values;
+                    #add firstLineList to temporary dictionary;
+                #'''
+                #firstLineList = self.getFirstLine(firstLine)
+                #tempList['firstLine'] = firstLineList
 
-                ''' open current file as comma seperated file (csv)'''
-                with zfile.open(finfo, "r") as csvfile:
+                #''' open current file as comma seperated file (csv)'''
+                #with zfile.open(finfo, "r") as csvfile:
                     
-                    ''' read csv-file as dictionary '''
-                    reader = csv.DictReader(csvfile, delimiter = ';')
+                    #''' read csv-file as dictionary '''
+                    #reader = csv.DictReader(csvfile, delimiter = ';')
                     
-                    ''' list of rows or rather columns (see description of this function above )'''
-                    dataList = []
-                    for row in reader:
-                        ''' temporary dictionary to store {'row': 'data'} '''
-                        tempDictionary = {}
-                        for data in row:
-                            ''' turn 'data' in utf-8 '''
-                            data = self.makeUTF8(data)
-                            for z in firstLineList:                               
-                                if z in data:
-                                    if row[data]:
-                                        xy = row[data]
-                                        xy = str(xy).strip()
-                                        xy = self.makeUTF8(xy)
-                                    else:
-                                        xy = 'none'
-                                    tempDictionary[z] = xy
-                        dataList.append(tempDictionary)       
+                    #''' list of rows or rather columns (see description of this function above )'''
+                    #dataList = []
+                    #for row in reader:
+                        #''' temporary dictionary to store {'row': 'data'} '''
+                        #tempDictionary = {}
+                        #for data in row:
+                            #''' turn 'data' in utf-8 '''
+                            #data = self.makeUTF8(data)
+                            #for z in firstLineList:                               
+                                #if z in data:
+                                    #if row[data]:
+                                        #xy = row[data]
+                                        #xy = str(xy).strip()
+                                        #xy = self.makeUTF8(xy)
+                                    #else:
+                                        #xy = 'none'
+                                    #tempDictionary[z] = xy
+                        #dataList.append(tempDictionary)       
 
-                tempList['data'] = dataList
+                #tempList['data'] = dataList
 
-                ''' add the temporary dictionary to dataDictionary '''
-                dataDictionary[finfo] = tempList
+                #''' add the temporary dictionary to dataDictionary '''
+                #dataDictionary[finfo] = tempList
                 
                 
-        return dataDictionary
+        #return dataDictionary
 
 
 class readCSV(object):
@@ -275,8 +275,8 @@ class readCSV(object):
     
     ''' __str__-Methode anpassen >> print object'''
     def __str__(self):
-        return "Noch anzupassen!"
-        #return "FileName: %s \nFileEnding: %s" % (self.csvFileName,self.desiredFileEnding)
+        #return "Noch anzupassen!"
+        return "ZIP file name: \n%s \n\nFileNames: \n%s \n" % (self.csvFileName, self.allFiles)
         #for value in self.columns:
             #for value in rows:
         #return "%s" % (self.columns)
@@ -335,6 +335,11 @@ class readCSV(object):
                                 v = str(row[value])
                                 v = v.strip()
                                 v = self.makeUTF8(v)
+                                if v == '':
+                                    v = 0
+                                if v == '':
+                                    v = -99999
+                                
                             else:
                                 v = None
                             temporaryDictionary[column] = v
@@ -375,6 +380,7 @@ class readCSV(object):
                         
                         value = self.makeUTF8(value) 
                         for column in self.columns[currentFileTitle]:
+                            print column, value
                             if column in value:
                                 if row[value]:
                                     
@@ -393,29 +399,33 @@ class readCSV(object):
             dataDic[currentFileTitle] = dataList
         return dataDic
  
-#filePath = "data/recent/station_metadata/Stationsmetadaten_klima_stationen_00044_20131005_20150216.txt"
-filePath = 'data/historical/tageswerte_00001_19370101_19860630_hist.zip'
-currentZIP = readCSV(filePath, desiredFileEnding='txt')
+##filePath = "data/recent/station_metadata/Stationsmetadaten_klima_stationen_00044_20131005_20150216.txt"
+#filePath = 'data/historical/tageswerte_00001_19370101_19860630_hist.zip'
+#currentZIP = readCSV(filePath, desiredFileEnding='txt')
+#po.insertMETADATA(currentZIP)
 
-#print list(c.columns)
-#print c.rows[0]['Stationsname']
 
-#print currentZIP.columns.keys()
-#print currentZIP.files
-#print currentZIP.allFiles
-po.insertMETADATA(currentZIP)
-#for fileTitle in currentZIP.files:
-    #if 'meta' in fileTitle:
-        #po.insertMETADATA(currentZIP.rows[fileTitle])
+
+
+
+##print list(c.columns)
+##print c.rows[0]['Stationsname']
+
+##print currentZIP.columns.keys()
+##print currentZIP.files
+##print currentZIP.allFiles
+##for fileTitle in currentZIP.files:
+    ##if 'meta' in fileTitle:
+        ##po.insertMETADATA(currentZIP.rows[fileTitle])
         
         
-        #for m_row in currentZIP.rows[fileTitle]:
-            #for m_column in m_row:
-                #print "%s: %s" % (m_column, m_row[m_column])
-    #if 'produkt' in fileTitle:
-        #for p_row in currentZIP.rows[fileTitle]:
-            #for p_column in p_row:    
-                #print "%s: %s" % (p_column, p_row[p_column])
+        ##for m_row in currentZIP.rows[fileTitle]:
+            ##for m_column in m_row:
+                ##print "%s: %s" % (m_column, m_row[m_column])
+    ##if 'produkt' in fileTitle:
+        ##for p_row in currentZIP.rows[fileTitle]:
+            ##for p_column in p_row:    
+                ##print "%s: %s" % (p_column, p_row[p_column])
         
         
         

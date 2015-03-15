@@ -48,23 +48,28 @@ import postgres as po
 #print firstLineList
 
 
-fileType = 'txt'
-#txtFilesInZIP = fs.csvZIP('data/recent/tageswerte_KL_13711_akt.zip', fileType) 
-currentZIP = fs.csvZIP('data/recent/tageswerte_KL_03513_akt.zip', fileType) 
+#fileType = 'txt'
+##txtFilesInZIP = fs.csvZIP('data/recent/tageswerte_KL_13711_akt.zip', fileType) 
+#currentZIP = fs.csvZIP('data/recent/tageswerte_KL_03513_akt.zip') 
 
-readZIP = currentZIP.readZIP()
+#readZIP = currentZIP.readZIP()
 
-#print readZIP.keys()
-for txtFiles in readZIP:
-    if 'meta' in txtFiles:
-        #print readZIP[txtFiles]['firstLine']
+##print readZIP.keys()
+#for txtFiles in readZIP:
+    #if 'meta' in txtFiles:
+        ##print readZIP[txtFiles]['firstLine']
 
-        #print readZIP[txtFiles].keys()
-        print readZIP[txtFiles]['data']
+        ##print readZIP[txtFiles].keys()
+        #print readZIP[txtFiles]['data']
         
-        
-        
-        
+path = 'data/temp/'
+historical = fs.createFolderNameList(path)       
+#print len(historical)
+for zipFile in historical:
+    #print zipFile
+    current = fs.readCSV(path + zipFile, desiredFileEnding='txt')
+    #print current
+    #po.insertMETADATA(current)
         
         
         

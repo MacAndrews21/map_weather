@@ -33,3 +33,25 @@ LINE 1: ...oehe_ind, sonnenscheindauer, schneehoehe) VALUES ('', NULL,...
                                                              ^
 
 
+data/historical/temp/tageswerte_00001_19370101_19860630_hist.zipERROR:  relation "historicale" does not exist
+LINE 1: INSERT INTO historicale(stations_id,stationshoehe,geogr_brei...
+                    ^
+
+
+data/historical/temp/tageswerte_00003_18910101_20110331_hist.zipERROR:  relation "historicale_data" does not exist
+LINE 1: INSERT INTO historicale_data(stations_id, mess_datum, qualit...
+                    ^
+
+
+data/historical/temp/tageswerte_00001_19370101_19860630_hist.zip
+ERROR:  relation "historicale" does not exist
+LINE 1: INSERT INTO historicale(stations_id,stationshoehe,geogr_brei...
+                    ^
+
+
+data/historical/temp/tageswerte_00003_18910101_20110331_hist.zip
+ERROR:  relation "historicale_data" does not exist
+LINE 1: INSERT INTO historicale_data(stations_id, mess_datum, qualit...
+                    ^
+
+
