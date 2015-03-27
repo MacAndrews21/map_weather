@@ -110,9 +110,21 @@ WHERE t1."von_datum" <= t2."mess_datum" AND t1."bis_datum" >= t2."mess_datum" AN
 ORDER BY t2."mess_datum"
 
 
+--
+
+SELECT t1."stations_id", t1."stationsname", t1."geom_4326", t2."lufttemperatur", t2."mess_datum" 
+INTO test8
+FROM historical AS t1, historical_data AS t2 
+WHERE t2."mess_datum" >= t1."von_datum" AND t2."mess_datum" <= t1."bis_datum" AND t2."stations_id" = 1 AND t1."stations_id" = 1
+ORDER BY t2."mess_datum"
 
 
 
+SELECT t1."stations_id", t1."stationsname", t1."geom_4326", t2."lufttemperatur", t2."mess_datum" 
+INTO test8
+FROM historical AS t1, historical_data AS t2 
+WHERE t2."mess_datum" >= t1."von_datum" AND t2."mess_datum" <= t1."bis_datum" AND t2."stations_id" = t1."stations_id"
+ORDER BY t2."mess_datum"
 
 
 

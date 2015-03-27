@@ -62,13 +62,13 @@ import postgres as po
         ##print readZIP[txtFiles].keys()
         #print readZIP[txtFiles]['data']
         
-path = 'data/temp/'
+path = 'data/historical/'
 historical = fs.createFolderNameList(path)       
 #print len(historical)
 for zipFile in historical:
     #print zipFile
     current = fs.readCSV(path + zipFile, desiredFileEnding='txt')
-    #print current
+    print current
     #print current.columns
     po.insertMETADATA(current)
         
