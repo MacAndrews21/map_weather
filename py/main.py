@@ -69,7 +69,8 @@ for zipFile in historical:
     #print zipFile
     current = fs.readCSV(path + zipFile, desiredFileEnding='txt')
     #print current
-    #po.insertMETADATA(current)
+    #print current.columns
+    po.insertMETADATA(current)
         
         
         

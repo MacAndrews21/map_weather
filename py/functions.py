@@ -327,10 +327,20 @@ class readCSV(object):
             for row in reader:
                 temporaryDictionary = {}
                 for value in row:
+                    ''' value for if-clause; it is neccessary to have no forward ( column) or backward (column ) spaces  in the columns '''
+                    value_ifClause = str(value)
+                    value_ifClause = value_ifClause.strip()
+                    value_ifClause = self.makeUTF8(value_ifClause)
                     
+                    ''' original value (column name) to get the right row[value] '''
                     value = self.makeUTF8(value)
+                    
                     for column in self.columns:
-                        if column in value:
+                        column = str(column)
+                        column = column.strip()
+                        column = self.makeUTF8(column)
+                        
+                        if column == value_ifClause:
                             if row[value]:
                                 v = str(row[value])
                                 v = v.strip()
@@ -369,6 +379,7 @@ class readCSV(object):
 
     def getRowsFromZip(self):
         dataDic = {}
+        #temp_text = open("temp_text.txt", 'w')
         for currentFileTitle in self.columns:
             with self.zfile.open(currentFileTitle) as csvFile:
                 reader = csv.DictReader(csvFile, delimiter = ';')
@@ -377,11 +388,21 @@ class readCSV(object):
                 for row in reader:
                     temporaryDictionary = {}
                     for value in row:
+                        ''' value for if-clause; it is neccessary to have no ' ' (spaces) in the columns '''
+                        value_ifClause = str(value)
+                        value_ifClause = value_ifClause.strip()
+                        value_ifClause = self.makeUTF8(value_ifClause)
                         
+                        ''' original value (column name) to get the right row[value] '''
                         value = self.makeUTF8(value) 
+                        
                         for column in self.columns[currentFileTitle]:
-                            print column, value
-                            if column in value:
+                            column = str(column)
+                            column = column.strip()
+                            column = self.makeUTF8(column)
+
+                            if column == value_ifClause:
+                                #temp_text.write(str(column) + " |||||||||| " + str(value) + "\n")                                
                                 if row[value]:
                                     
                                     v = str(row[value])        
@@ -397,6 +418,7 @@ class readCSV(object):
                                 temporaryDictionary[column] = v
                     dataList.append(temporaryDictionary)
             dataDic[currentFileTitle] = dataList
+        #temp_text.close()
         return dataDic
  
 ##filePath = "data/recent/station_metadata/Stationsmetadaten_klima_stationen_00044_20131005_20150216.txt"
