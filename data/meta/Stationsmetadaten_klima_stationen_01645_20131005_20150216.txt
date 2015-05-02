@@ -1,4 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-1645;340;50.9547;9.0622;19490921;19540930;Gilserberg-Moischeid
-1645;340;50.9547;9.0633;19541001;20040430;Gilserberg-Moischeid
-1645;340;50.9650;9.0492;20040501;;Gilserberg-Moischeid

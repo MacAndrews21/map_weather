@@ -1,3 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-6266;112;52.0306;10.9625;20030228;20070630;Pabstorf
-6266;112;52.0303;10.9625;20070701;;Pabstorf

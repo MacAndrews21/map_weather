@@ -1,4 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-3278;362;48.5328;9.2800;19900401;20021231;Metzingen
-3278;370;48.5311;9.3172;20030101;20080610;Metzingen
-3278;355;48.5375;9.2731;20081202;;Metzingen

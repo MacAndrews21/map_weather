@@ -1,2 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-5643;66;53.1858;12.4947;19940301;;Wittstock-RoteMühle

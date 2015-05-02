@@ -1,6 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-2074;529;48.3558;8.9689;18640101;19301231;Hechingen
-2074;489;;;19310101;19511007;Hechingen
-2074;537;48.3461;8.9647;19511008;19690305;Hechingen
-2074;520;48.3753;8.9794;19690306;20040531;Hechingen
-2074;522;48.3750;8.9800;20040601;;Hechingen

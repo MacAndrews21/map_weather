@@ -1,5 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-3552;41;52.9117;12.8086;19510101;19580331;Neuruppin
-3552;41;52.9117;12.8086;19580401;19591231;Neuruppin
-3552;38;52.9053;12.8086;19600101;19990927;Neuruppin
-3552;38;52.9036;12.8069;19990928;;Neuruppin

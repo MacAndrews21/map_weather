@@ -1,5 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-1279;280;49.5969;11.0158;19461101;19550608;Möhrendorf-Kleinseebach
-1279;280;49.5833;11.0197;19550609;19581202;Möhrendorf-Kleinseebach
-1279;270;49.6161;11.0014;19581203;20060630;Möhrendorf-Kleinseebach
-1279;268;49.6494;11.0072;20060701;;Möhrendorf-Kleinseebach

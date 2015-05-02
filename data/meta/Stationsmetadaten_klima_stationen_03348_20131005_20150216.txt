@@ -1,2 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-3348;240;51.7206;9.8347;19900701;;Moringen-Lutterbeck

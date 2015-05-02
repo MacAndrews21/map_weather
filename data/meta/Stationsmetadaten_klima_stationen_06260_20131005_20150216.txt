@@ -1,2 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-6260;385;49.3325;9.7036;20000508;;Ingelfingen-Stachenhausen

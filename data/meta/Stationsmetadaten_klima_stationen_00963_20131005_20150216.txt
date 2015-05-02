@@ -1,5 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-963;37;52.6078;8.3789;19470122;19520808;Diepholz
-963;38;52.6217;8.3883;19520809;19590915;Diepholz
-963;37;52.6114;8.3825;19590916;19931231;Diepholz
-963;39;52.5881;8.3422;19940101;;Diepholz

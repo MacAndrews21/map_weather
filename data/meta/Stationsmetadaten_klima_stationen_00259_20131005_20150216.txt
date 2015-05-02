@@ -1,6 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-259;408;47.7997;7.6706;18691201;19460331;Müllheim
-259;449;;;19460401;19541031;Müllheim
-259;412;47.7992;7.6658;19541101;19940930;Müllheim
-259;367;47.8069;7.6764;19941001;20010831;Müllheim
-259;273;47.8061;7.6383;20030225;;Müllheim

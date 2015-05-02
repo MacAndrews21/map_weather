@@ -1,8 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-4094;462;47.7867;9.6219;19180901;19501231;Weingarten,Kr.Ravensburg
-4094;462;47.7867;9.6219;19510101;19600714;Weingarten,Kr.Ravensburg
-4094;461;47.7875;9.6203;19600715;19670921;Weingarten,Kr.Ravensburg
-4094;504;47.7794;9.6225;19670922;19760731;Weingarten,Kr.Ravensburg
-4094;435;47.7967;9.6225;19760801;19860930;Weingarten,Kr.Ravensburg
-4094;440;47.8075;9.6222;19900801;20040531;Weingarten,Kr.Ravensburg
-4094;440;47.8061;9.6206;20040601;;Weingarten,Kr.Ravensburg

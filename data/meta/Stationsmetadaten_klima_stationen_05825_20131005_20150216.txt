@@ -1,3 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-5825;40;52.6208;12.7906;19520301;19970910;Berge
-5825;40;52.6192;12.7872;19970911;;Berge

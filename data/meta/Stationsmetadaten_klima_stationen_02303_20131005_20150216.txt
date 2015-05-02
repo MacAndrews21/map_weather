@@ -1,4 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-2303;10;54.3156;9.5342;19590406;19810930;Hohn
-2303;10;54.3156;9.5342;19811001;20071217;Hohn
-2303;10;54.3144;9.5389;20071218;;Hohn

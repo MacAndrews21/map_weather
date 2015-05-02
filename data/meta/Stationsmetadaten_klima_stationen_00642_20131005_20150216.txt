@@ -1,4 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-642;1;53.3233;8.4789;19660101;19730114;Brake
-642;5;53.3536;8.4964;19730115;19931027;Brake
-642;1;53.3517;8.4969;19931028;;Brake

@@ -1,3 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-3098;387;51.2467;7.6433;19940101;20100623;Lüdenscheid
-3098;387;51.2450;7.6422;20100624;;Lüdenscheid

@@ -1,6 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-1590;35;51.5000;6.2333;18960701;19630930;Geldern-Walbeck
-1590;35;51.5000;6.2333;19631001;19771108;Geldern-Walbeck
-1590;32;51.4983;6.2381;19771109;19870628;Geldern-Walbeck
-1590;40;51.5006;6.2497;19870629;20090217;Geldern-Walbeck
-1590;37;51.4942;6.2461;20090218;;Geldern-Walbeck

@@ -1,5 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-3023;21;52.5233;7.3169;19501001;19501214;Lingen
-3023;21;52.5233;7.3169;19501215;19660921;Lingen
-3023;21;52.5231;7.3169;19660922;19900831;Lingen
-3023;22;52.5181;7.3081;19900901;;Lingen

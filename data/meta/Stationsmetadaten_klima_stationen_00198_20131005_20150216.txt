@@ -1,4 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-198;150;51.3664;11.3275;19530601;19580630;Artern
-198;164;51.3756;11.2931;19580701;19601031;Artern
-198;164;51.3744;11.2919;19601101;;Artern

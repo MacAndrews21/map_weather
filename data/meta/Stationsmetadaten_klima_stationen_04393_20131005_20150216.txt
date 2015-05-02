@@ -1,4 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-4393;10;54.3072;8.6197;19360101;19711231;SanktPeter-Ording
-4393;4;54.2981;8.6453;19720101;19991129;SanktPeter-Ording
-4393;5;54.3278;8.6028;19991130;;SanktPeter-Ording

@@ -1,4 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-2362;335;50.5678;7.4933;19821001;19940331;Hümmerich
-2362;352;50.5672;7.4986;19940401;19950228;Hümmerich
-2362;328;50.5650;7.4836;20030522;;Hümmerich

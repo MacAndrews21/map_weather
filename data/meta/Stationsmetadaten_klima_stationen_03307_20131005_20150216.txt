@@ -1,6 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-3307;914;47.4400;11.2619;19410101;19520331;Mittenwald-Buckelwiesen
-3307;914;47.4383;11.2667;19520401;19900630;Mittenwald-Buckelwiesen
-3307;920;47.4542;11.2719;19900701;19941130;Mittenwald-Buckelwiesen
-3307;920;47.4400;11.2692;19941201;20080331;Mittenwald-Buckelwiesen
-3307;981;47.4775;11.2653;20080401;;Mittenwald-Buckelwiesen

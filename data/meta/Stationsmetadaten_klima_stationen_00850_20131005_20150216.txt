@@ -1,4 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-850;39;52.5972;10.0292;19580701;19781231;Celle
-850;39;52.5972;10.0292;19790101;20070613;Celle
-850;39;52.5958;10.0294;20070614;;Celle

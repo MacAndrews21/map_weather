@@ -1,8 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-4445;612;51.7658;10.6578;19311101;19560930;Wernigerode-Schierke
-4445;633;51.7675;10.6544;19561001;19600928;Wernigerode-Schierke
-4445;614;51.7672;10.6564;19600929;19890630;Wernigerode-Schierke
-4445;613;51.7669;10.6558;19890701;20010709;Wernigerode-Schierke
-4445;609;51.7658;10.6533;20010710;20070630;Wernigerode-Schierke
-4445;609;51.7658;10.6533;20070701;20090630;Wernigerode-Schierke
-4445;609;51.7658;10.6533;20090701;;Wernigerode-Schierke

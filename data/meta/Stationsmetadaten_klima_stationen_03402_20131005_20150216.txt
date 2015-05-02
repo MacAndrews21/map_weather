@@ -1,6 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-3402;721;48.4072;9.4947;19350701;19531018;Münsingen-Apfelstetten
-3402;715;48.4103;9.4964;19531019;19570724;Münsingen-Apfelstetten
-3402;720;48.4119;9.4989;19570725;19630417;Münsingen-Apfelstetten
-3402;721;48.4075;9.4939;19630418;19890930;Münsingen-Apfelstetten
-3402;750;48.3853;9.4831;19891001;;Münsingen-Apfelstetten

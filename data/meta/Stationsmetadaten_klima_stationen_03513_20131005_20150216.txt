@@ -1,5 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-3513;845;50.5036;11.1500;19530701;19610419;NeuhausamRennweg
-3513;845;50.5033;11.1506;19610420;19780710;NeuhausamRennweg
-3513;845;50.5014;11.1358;19870101;20060705;NeuhausamRennweg
-3513;845;50.5002;11.1344;20060706;;NeuhausamRennweg

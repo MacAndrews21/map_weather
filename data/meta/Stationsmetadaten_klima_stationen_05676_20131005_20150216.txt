@@ -1,4 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-5676;74;52.4192;10.7214;19810401;19901031;Wolfsburg(Südwest)
-5676;70;52.4172;10.6936;19901101;20100831;Wolfsburg(Südwest)
-5676;82;52.3958;10.6897;20100901;;Wolfsburg(Südwest)

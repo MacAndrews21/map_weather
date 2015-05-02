@@ -1,4 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-2925;353;51.3800;10.3178;19560801;19751231;Leinefelde
-2925;356;51.3944;10.3133;19760101;20070201;Leinefelde
-2925;356;51.3931;10.3122;20070202;;Leinefelde

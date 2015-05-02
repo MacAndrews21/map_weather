@@ -1,4 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-5349;70;53.5214;12.6694;18890701;20110903;Waren(Müritz)
-5349;70;53.5194;12.6675;20110904;20140709;Waren(Müritz)
-5349;73;53.5195;12.6654;20140710;;Waren(Müritz)

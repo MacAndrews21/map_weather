@@ -1,7 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-151;519;49.4542;11.8733;19330801;19550228;Amberg-Unterammersricht
-151;385;49.4483;11.8356;19550301;19580108;Amberg-Unterammersricht
-151;405;49.4517;11.8497;19580109;19611103;Amberg-Unterammersricht
-151;410;49.4525;11.8636;19611104;19840507;Amberg-Unterammersricht
-151;386;49.4742;11.8617;19840508;19970831;Amberg-Unterammersricht
-151;383;49.4689;11.8544;19970901;;Amberg-Unterammersricht

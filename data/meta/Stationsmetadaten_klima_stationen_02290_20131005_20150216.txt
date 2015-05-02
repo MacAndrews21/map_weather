@@ -1,4 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-2290;977;47.8011;11.0156;17810101;19400419;Hohenpeißenberg
-2290;977;47.8022;11.0106;19400420;19480430;Hohenpeißenberg
-2290;977;47.8008;11.0108;19480501;;Hohenpeißenberg
