@@ -1,2 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-3540;195;50.8444;7.3714;19920901;;Neunkirchen-Seelscheid-Krawinkel

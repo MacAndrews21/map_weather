@@ -1,6 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-1490;401;47.6533;9.4869;19461001;19500124;Friedrichshafen
-1490;401;47.6533;9.4869;19500125;19770131;Friedrichshafen
-1490;398;47.6689;9.5119;19770201;19801130;Friedrichshafen
-1490;398;47.6503;9.4808;19880901;20001113;Friedrichshafen
-1490;394;47.6450;9.4794;20001114;;Friedrichshafen

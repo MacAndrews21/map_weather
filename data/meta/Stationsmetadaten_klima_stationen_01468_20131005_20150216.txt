@@ -1,4 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-1468;797;48.4533;8.4092;19480315;20060801;Freudenstadt
-1468;797;48.4547;8.4100;20060802;20100912;Freudenstadt
-1468;797;48.4536;8.4089;20100913;;Freudenstadt

@@ -1,3 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-3571;516;49.8261;11.8400;19641128;20080229;NeustadtamKulm-Filchendorf
-3571;452;49.8174;11.8638;20080301;;NeustadtamKulm-Filchendorf

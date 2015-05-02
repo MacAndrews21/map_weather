@@ -1,4 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-3155;403;50.0906;6.8036;19611020;20040731;Manderscheid-Sonnenhof
-3155;419;50.0956;6.8028;20040801;20090930;Manderscheid-Sonnenhof
-3155;413;50.1014;6.8014;20091001;;Manderscheid-Sonnenhof

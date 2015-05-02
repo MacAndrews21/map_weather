@@ -1,3 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-3031;92;51.6339;8.3936;19801201;20020925;Lippstadt-Bökenförde
-3031;92;51.6333;8.3942;20020926;;Lippstadt-Bökenförde

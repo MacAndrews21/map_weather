@@ -1,2 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-7331;468;48.6094;10.2681;20050601;;Hermaringen-Allewind

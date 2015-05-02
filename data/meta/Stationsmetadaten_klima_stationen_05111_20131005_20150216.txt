@@ -1,4 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-5111;486;48.0225;12.5564;19171001;19640409;Trostberg
-5111;489;48.0217;12.5578;19640410;20060331;Trostberg
-5111;559;48.0308;12.5394;20060401;;Trostberg

@@ -1,6 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-1103;528;48.0756;11.9550;19000101;19771231;Ebersberg-Halbing
-1103;573;;;19780101;19891231;Ebersberg-Halbing
-1103;570;48.0792;11.9550;19900101;19930531;Ebersberg-Halbing
-1103;572;48.0797;11.9553;19930601;20060930;Ebersberg-Halbing
-1103;592;48.1000;11.9869;20061001;;Ebersberg-Halbing

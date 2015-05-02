@@ -1,3 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-2023;457;48.7847;10.7022;19741009;20021112;Harburg
-2023;502;48.7917;10.7061;20021113;;Harburg

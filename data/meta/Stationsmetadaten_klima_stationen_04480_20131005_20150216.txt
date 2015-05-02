@@ -1,6 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-4480;204;50.3506;9.5239;19510501;19530901;Schlüchtern-Herolz
-4480;200;50.3464;9.5272;19851001;19910331;Schlüchtern-Herolz
-4480;212;50.3428;9.5167;19910401;19960731;Schlüchtern-Herolz
-4480;209;50.3306;9.5086;19960801;20031231;Schlüchtern-Herolz
-4480;230;50.3442;9.5536;20040101;;Schlüchtern-Herolz

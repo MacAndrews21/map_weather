@@ -1,5 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-2171;216;50.8617;9.7008;19520901;19610622;Hersfeld,Bad
-2171;212;50.8719;9.7158;19610623;19941220;Hersfeld,Bad
-2171;272;50.8519;9.7375;19941221;20060516;Hersfeld,Bad
-2171;272;50.8517;9.7378;20060517;;Hersfeld,Bad

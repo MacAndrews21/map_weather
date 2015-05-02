@@ -1,6 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-142;520;48.3883;11.2606;19550101;19590731;Altomünster-Maisbrunn
-142;508;48.3867;11.2539;19590801;19641130;Altomünster-Maisbrunn
-142;502;48.3886;11.2533;19641201;19961031;Altomünster-Maisbrunn
-142;500;48.4064;11.2908;19961101;20051130;Altomünster-Maisbrunn
-142;510;48.4058;11.3117;20051201;;Altomünster-Maisbrunn

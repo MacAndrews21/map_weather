@@ -1,3 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-4978;395;50.6333;10.0167;19310101;19851231;Tann/Rhön
-4978;395;50.6389;10.0228;19860101;;Tann/Rhön

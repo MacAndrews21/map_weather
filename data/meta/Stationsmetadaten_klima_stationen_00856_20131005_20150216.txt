@@ -1,3 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-856;549;47.8867;12.5394;19760503;20020627;Chieming
-856;551;47.8842;12.5403;20020628;;Chieming

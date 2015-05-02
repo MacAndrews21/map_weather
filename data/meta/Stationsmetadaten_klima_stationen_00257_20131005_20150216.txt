@@ -1,6 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-257;211;48.7656;8.2431;19470201;19761011;Baden-Baden-Geroldsau
-257;280;48.7647;8.2642;19761012;19820630;Baden-Baden-Geroldsau
-257;193;48.7550;8.2319;19820701;19840131;Baden-Baden-Geroldsau
-257;218;48.7678;8.2569;19840201;19910820;Baden-Baden-Geroldsau
-257;240;48.7267;8.2456;19910821;;Baden-Baden-Geroldsau

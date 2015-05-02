@@ -1,4 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-3234;225;51.1550;13.4503;19560101;19980416;GarsebachbeiMeißen
-3234;225;51.1550;13.4503;20030704;20050131;GarsebachbeiMeißen
-3234;157;51.1292;13.4325;20050201;;GarsebachbeiMeißen

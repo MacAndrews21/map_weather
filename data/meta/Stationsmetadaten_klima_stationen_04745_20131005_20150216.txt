@@ -1,4 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-4745;74;52.9936;9.8278;18910101;19580531;Soltau
-4745;77;52.9983;9.8333;19580601;20070813;Soltau
-4745;76;52.9604;9.7931;20070814;;Soltau

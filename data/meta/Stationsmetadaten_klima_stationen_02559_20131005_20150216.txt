@@ -1,5 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-2559;705;47.7244;10.3364;19490101;19510930;Kempten
-2559;705;47.7244;10.3364;19511001;20061126;Kempten
-2559;705;47.7231;10.3347;20061127;20140406;Kempten
-2559;705;47.7231;10.3347;20140407;;Kempten

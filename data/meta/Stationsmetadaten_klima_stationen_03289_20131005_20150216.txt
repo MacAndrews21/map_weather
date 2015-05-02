@@ -1,4 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-3289;336;50.7394;11.8336;19721001;19791209;Schmieritz-Weltwitz
-3289;340;50.7386;11.8350;19791210;20041031;Schmieritz-Weltwitz
-3289;349;50.7283;11.7839;20041101;;Schmieritz-Weltwitz

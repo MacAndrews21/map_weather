@@ -1,3 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-3722;484;48.2442;11.5525;19220601;19760331;Oberschleißheim
-3722;484;48.2442;11.5525;19760401;;Oberschleißheim

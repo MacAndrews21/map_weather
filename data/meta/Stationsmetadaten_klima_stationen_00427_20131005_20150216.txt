@@ -1,6 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-427;46;52.3822;13.5325;19550701;19550930;Berlin-Schönefeld
-427;46;52.3822;13.5325;19551001;19601231;Berlin-Schönefeld
-427;46;52.3822;13.5325;19610101;19631231;Berlin-Schönefeld
-427;46;52.3822;13.5325;19640101;20081116;Berlin-Schönefeld
-427;46;52.3806;13.5306;20081117;;Berlin-Schönefeld

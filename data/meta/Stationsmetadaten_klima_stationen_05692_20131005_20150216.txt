@@ -1,6 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-5692;96;49.6314;8.3758;18900101;19060831;Worms
-5692;92;;;19060901;19420228;Worms
-5692;91;;;19420301;19941231;Worms
-5692;90;49.6750;8.3528;19950101;20040831;Worms
-5692;88;49.6051;8.3659;20040901;;Worms

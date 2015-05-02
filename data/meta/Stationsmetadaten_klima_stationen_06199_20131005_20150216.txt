@@ -1,3 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-6199;16;54.2503;13.0433;20000801;20110903;Steinhagen-Negast
-6199;16;54.2486;13.0414;20110904;;Steinhagen-Negast

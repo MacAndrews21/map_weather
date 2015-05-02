@@ -1,3 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-4841;1;53.6942;8.8742;19981001;20040630;Steinau,Kr.Cuxhaven
-4841;1;53.6942;8.8739;20040701;;Steinau,Kr.Cuxhaven

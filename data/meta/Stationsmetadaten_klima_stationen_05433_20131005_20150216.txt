@@ -1,5 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-5433;455;49.5694;6.8019;19560419;19660718;Weiskirchen/Saar
-5433;370;49.5542;6.8175;19660719;19681031;Weiskirchen/Saar
-5433;368;49.5542;6.8172;19681101;19970630;Weiskirchen/Saar
-5433;380;49.5533;6.8119;19970701;;Weiskirchen/Saar

@@ -1,7 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-867;322;50.2789;10.9214;19460801;19520514;Lautertal-Oberlauter
-867;322;50.2675;10.9531;19520515;19650726;Lautertal-Oberlauter
-867;322;50.2647;10.9500;19650727;19920212;Lautertal-Oberlauter
-867;322;50.2836;10.9778;19920213;19920731;Lautertal-Oberlauter
-867;322;50.2836;10.9778;19920801;20041215;Lautertal-Oberlauter
-867;345;50.3067;10.9678;20041216;;Lautertal-Oberlauter

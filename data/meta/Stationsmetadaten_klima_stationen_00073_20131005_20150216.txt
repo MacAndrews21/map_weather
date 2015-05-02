@@ -1,5 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-73;351;48.5681;13.0939;19590301;19620524;Aldersbach-Kriestorf
-73;335;48.5700;13.0786;19620525;19790831;Aldersbach-Kriestorf
-73;325;48.5919;13.0886;19790901;20070331;Aldersbach-Kriestorf
-73;340;48.6158;13.0506;20070401;;Aldersbach-Kriestorf

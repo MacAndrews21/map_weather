@@ -1,4 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-2483;839;51.1800;8.4886;19541207;19620630;KahlerAsten
-2483;839;51.1800;8.4886;19620701;20060530;KahlerAsten
-2483;839;51.1800;8.4889;20060531;;KahlerAsten

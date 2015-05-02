@@ -1,4 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-2437;22;54.4594;9.5161;19581201;19590505;Schleswig-Jagel
-2437;22;54.4594;9.5161;19590506;20071217;Schleswig-Jagel
-2437;21;54.4550;9.5192;20071218;;Schleswig-Jagel

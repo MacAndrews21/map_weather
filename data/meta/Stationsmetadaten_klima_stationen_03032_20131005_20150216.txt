@@ -1,4 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-3032;16;55.0098;8.4151;19480108;19641124;ListaufSylt
-3032;26;55.0110;8.4125;19641125;20091117;ListaufSylt
-3032;26;55.0110;8.4125;20091118;;ListaufSylt

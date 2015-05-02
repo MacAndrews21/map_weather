@@ -1,3 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-217;665;47.8783;11.3631;19710401;19971016;Attenkam
-217;672;47.8772;11.3642;19971017;;Attenkam

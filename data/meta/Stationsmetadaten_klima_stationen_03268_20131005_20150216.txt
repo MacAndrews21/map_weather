@@ -1,4 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname;
-3268;920;48.1833;9.0000;19740401;20070730;Meßstetten
-3268;920;48.1875;8.9939;20070731;20130930;Meßstetten
-3268;920;48.1875;8.9939;20131001;;Meßstetten
