@@ -1,3 +1,0 @@
-Stations_ID;    Mess_Datum;     Qualitaets_Niveau;      LUFTTEMPERATUR; LUFTTEMPERATUR_MAXIMUM;         LUFTTEMPERATUR_MINIMUM;LUFTTEMP_AM_ERDB_MINIMUM;WINDSPITZE_MAXIMUM;NIEDERSCHLAGSHOEHE;NIEDERSCHLAGSHOEHE_IND;SONNENSCHEINDAUER;SCHNEEHOEHE;eor
-
-3;              19910101;       10;                     5.0;            6.2;                            3.6;    1.9;18.5;3.5;6;2.400;0;eor

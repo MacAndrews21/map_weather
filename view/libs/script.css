@@ -1,0 +1,13 @@
+#daySlider {
+        position: fixed;
+        bottom: 50px;
+        left: 40px;
+        z-index: 999;
+}
+#yearSlider {
+        position: fixed;
+        bottom: 50px;
+        left: 20px;
+/*         background-color: #FF0000; */
+        z-index: 998;
+}
