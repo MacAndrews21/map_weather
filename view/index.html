@@ -11,12 +11,13 @@
   <link rel="stylesheet" href="http://openlayers.org/en/v3.1.1/css/ol.css" type="text/css">
   <script src="http://openlayers.org/en/v3.1.1/build/ol.js" type="text/javascript"></script>
   
-  <link href="libs/script.css" rel="stylesheet">
   <script src="libs/bootstrap-slider/js/bootstrap-slider.js" type="text/javascript"></script>
+  <link href="libs/bootstrap-slider/css/bootstrap-slider.css" rel="stylesheet">
   
   <link href="libs/dhtmlx/dhtmlxslider.css" rel="stylesheet">
   <script src="libs/dhtmlx/dhtmlxslider.js" type="text/javascript"></script>
   
+  <link href="libs/script.css" rel="stylesheet">
   <script src="libs/style.js" type="text/javascript"></script>
   <script src="libs/script.js" type="text/javascript"></script>
   <script src="libs/layer.js" type="text/javascript"></script>
@@ -25,11 +26,22 @@
   
 </head>
 <body onload='init()'>
-
+<!-- <input id="test"/> -->
 <div id="main">
+    <!-- dhtmlx-slider -->
     <div id='daySlider'></div>
     <div id='yearSlider'></div>
-    <div id="map" style="width: 100%; height: 100%;"></div>   
+    <!-- bootstrap-slider -->
+    <div id='daySlider_2'><input id="ex1" class="daySlider_2" data-slider-id="ex1Slider" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/></div>
+    <div id='yearSlider_2'><input id="ex2" class="yearSlider_2" data-slider-id="ex1Slider" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14" data-slider-orientation="vertical"/></div>
+    <div id="testSlider"><input id="test" class="testSlider" data-slider-id="test" type="text"/></div>
+    <!-- html5 slider -->
+    <div id="htmlSlider-div"><input type="range" id="htmlSlider"/></div>
+    
+    <!-- openLayers map-->
+    <div id="map" style="width: 100%;"></div> 
+<!-- <input id="ex1" class="slider" data-slider-id="ex1Slider" type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/> -->
+    
 </div>
 
 </body>

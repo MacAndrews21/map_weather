@@ -1,13 +1,128 @@
-#daySlider {
+/* dhtmlx-slider*/
+#daySlider {                             
+        position: fixed;                 
+        bottom: 50px;                    
+        left: 40px;                      
+        z-index: 999;                    
+}                                        
+#yearSlider {                            
+        position: fixed;                 
+        bottom: 50px;                    
+        left: 20px;                      
+/*         background-color: #FF0000; */ 
+        z-index: 998;                    
+}                                        
+
+/* bootstrap-slider*/
+#ex1Slider .slider-selection {
+        background: #BABABA;
+  
+}
+
+#daySlider_2 {
         position: fixed;
         bottom: 50px;
-        left: 40px;
-        z-index: 999;
+        right: 40px;
+        z-index: 997;
 }
-#yearSlider {
-        position: fixed;
-        bottom: 50px;
-        left: 20px;
-/*         background-color: #FF0000; */
-        z-index: 998;
+#yearSlider_2 {                            
+        position: fixed;                 
+        bottom: 50px;                    
+        right: 20px;                      
+        z-index: 996;                    
+} 
+
+#testSlider {                            
+        position: fixed;                 
+        bottom: 50px; 
+/*        width: 500px;*/
+        right: 500px;                      
+        z-index: 995;        
 }
+/*.testSlider{
+    width: 600px;
+}*/
+#test .slider-selection {
+/*     background: #BABABA; */
+}
+
+.slider-handle.custom::before{
+    background: transparent none; /*#BABABA; */
+    line-height: 20px;
+    font-size: 20px;
+    content:    '\25CE';
+    color:      #f00;
+}
+
+/* html5 slider */ 
+#htmlSlider-div {                            
+    position: fixed;                 
+    bottom: 100px;
+    width: 500px;
+    right: 500px;                      
+    z-index: 995;        
+}
+/*body{ 
+    var-sliderTrackColor: #FE9A2E;
+    var-sliderThumbColor: #B45F04;
+}
+$sliderTrackColor='#FE9A2E';
+$sliderThumbColor='#B45F04';
+* {
+    --main-color: #FE9A2E;
+} */
+
+/*@variables color{
+    sliderTrack: #FE9A2E;
+    sliderThumb: #B45F04;
+}*/
+input[type="range"]{
+    -webkit-appearance: none !important;
+/*     background-color: var(sliderTrackColor); */
+       background-color: #FE9A2E;
+/*     background-color: $sliderTrackColor; */
+/*     $sliderTrackColor */
+    width: 400px;
+    height:5px;
+}
+input[type="range"]::-moz-range-track{
+    -webkit-appearance: none !important;
+/*     background-color: var(sliderTrackColor); */
+    background-color: #FE9A2E;
+    width: 400px;
+    height:5px;
+}
+input[type="range"]::-ms-track{
+    -webkit-appearance: none !important;
+/*     background-color: var(sliderTrackColor); */
+    background-color: #FE9A2E;
+    width: 400px;
+    height:5px;
+}
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none !important;
+/*     background-color: var(sliderThumbColor); */
+    background-color: #B45F04;
+/*     border-radius:20px; */
+    border: 1px solid #999;
+    width: 5px;
+    height: 20px;
+}
+input[type="range"]::-moz-range-thumb{      
+    -webkit-appearance: none !important;    
+/*     background-color: var(sliderThumbColor);                  */
+    background-color: #B45F04;
+/*     border-radius:20px;                    */
+    border: 1px solid #999;               
+    width: 5px;                            
+    height: 20px;                           
+}                                           
+input[type="range"]::-ms-thumb{             
+    -webkit-appearance: none !important;    
+/*     background-color: var(sliderThumbColor);                  */
+    background-color: #B45F04;
+/*     border-radius:20px;                    */
+    border: 1px solid #999;              
+    width: 5px;                            
+    height: 20px;                           
+}                                           

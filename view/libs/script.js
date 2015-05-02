@@ -30,7 +30,38 @@ function init(){
  * ----------------------------------------------------------------------------------------------------
  * SLIDER
  */
-    var width = 30; //window.innerWidth - 200
+/* bootstrap-slider */
+var daySlider_2 = new Slider('input.daySlider_2', {
+        formatter: function(value) {
+                return 'Current value: ' + value;
+        }
+});
+
+var yearSlider_2 = new Slider('input.yearSlider_2', {
+        formatter: function(value) {
+                return 'Current value: ' + value;
+        }
+});
+var testSlider = new Slider("input.testSlider", { 
+        id: "test"
+        , min: 1
+        , max: 3
+        , value: 1
+//         , step: 1
+//         , formatter: function(value) {
+//                 return 'year: ' + value;
+//         }
+//         , orientation: 'vertical'
+//         , ticks: [1, 2, 3]
+//         , ticks_snap_bounds: 30
+        , handle: 'square' /* round, square, triangle, custom */ 
+        , enabled: true
+//         , range: true
+       
+});
+
+/* dhtml-slider */
+    var width = 300; //window.innerWidth - 200
     var daySlider = new dhtmlXSlider({
         parent: "daySlider", 
         size: width,
@@ -65,7 +96,12 @@ function init(){
                 map.addLayer(voronoi_3)
             }
         });
-
+    /* html 5 slider */
+    var htmlSlider = document.getElementById("htmlSlider");
+    htmlSlider.setAttribute("value", 1);
+    htmlSlider.setAttribute("min", 1);
+    htmlSlider.setAttribute("max", 3);
+    htmlSlider.setAttribute("step", 1);
     
 } // init()############################################################################################
 
