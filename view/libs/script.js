@@ -29,50 +29,24 @@ function init(){
 /**
  * ----------------------------------------------------------------------------------------------------
  * SLIDER
+ * Styled in slider-style.css 
+ * Slider functionality is defined in slider.js
  */
-/* bootstrap-slider */
-var daySlider_2 = new Slider('input.daySlider_2', {
-        formatter: function(value) {
-                return 'Current value: ' + value;
-        }
-});
-
-var yearSlider_2 = new Slider('input.yearSlider_2', {
-        formatter: function(value) {
-                return 'Current value: ' + value;
-        }
-});
-var testSlider = new Slider("input.testSlider", { 
-        id: "test"
-        , min: 1
-        , max: 3
-        , value: 1
-//         , step: 1
-//         , formatter: function(value) {
-//                 return 'year: ' + value;
-//         }
-//         , orientation: 'vertical'
-//         , ticks: [1, 2, 3]
-//         , ticks_snap_bounds: 30
-        , handle: 'square' /* round, square, triangle, custom */ 
-        , enabled: true
-//         , range: true
-       
-});
-
+    var voronoi_id = 1
+    var layers = map.getLayers()
+    
 /* dhtml-slider */
-    var width = 300; //window.innerWidth - 200
-    var daySlider = new dhtmlXSlider({
-        parent: "daySlider", 
-        size: width,
+    var horizontalSliderDHTMLX = new dhtmlXSlider({
+        parent: "horizontal-slider-dhtmlx", 
+        size: 300,
         min: 1,
         max: 3, 
         step: 1
     
     });
-    var yearSlider = new dhtmlXSlider({
-        parent: "yearSlider", 
-        size: width,
+    var verticalSliderDHTMLX = new dhtmlXSlider({
+        parent: "vertical-slider-dhtmlx", 
+        size: 300,
         min: 1,
         max: 3, 
         step: 1,
@@ -80,11 +54,9 @@ var testSlider = new Slider("input.testSlider", {
     
     });
     
-    var voronoi_id = 1
-    daySlider.attachEvent("onChange", function(){
-//             console.log(daySlider.getValue())
-            var layers = map.getLayers()
-            voronoi_id = daySlider.getValue()
+    horizontalSliderDHTMLX.attachEvent("onChange", function(){
+//             console.log(horizontalSliderDHTMLX.getValue())
+            voronoi_id = horizontalSliderDHTMLX.getValue()
             if (voronoi_id == 1){
                 layers.pop()
                 map.addLayer(voronoi_1)
@@ -96,12 +68,127 @@ var testSlider = new Slider("input.testSlider", {
                 map.addLayer(voronoi_3)
             }
         });
+    verticalSliderDHTMLX.attachEvent("onChange", function(){
+//             console.log(verticalSliderDHTMLX.getValue())
+            voronoi_id = verticalSliderDHTMLX.getValue()
+            if (voronoi_id == 1){
+                layers.pop()
+                map.addLayer(voronoi_1)
+            } else if (voronoi_id == 2) {
+                layers.pop()
+                map.addLayer(voronoi_2)
+            } else if (voronoi_id == 3) {
+                layers.pop()
+                map.addLayer(voronoi_3)
+            }
+        });
+/* bootstrap-slider */
+    var horizontalSliderBootstrap = new Slider("input#horizontal-slider-bootstrap", { 
+        id: "horizontal-slider-bootstrap"
+        , min: 1
+        , max: 3
+        , value: 1
+        , step: 1
+        , handle: 'round' /* round, square, triangle, custom */ 
+        , enabled: true
+        , width: 300
+       
+    });
+    var verticalSliderBootstrap = new Slider("input#vertical-slider-bootstrap", { 
+        id: "vertical-slider-bootstrap"
+        , min: 1
+        , max: 3
+        , value: 1
+        , step: 1
+        , handle: 'round' /* round, square, triangle, custom */ 
+        , enabled: true
+        , height: 300
+        , orientation: "vertical"
+       
+    });
+    horizontalSliderBootstrap.on("change", function(){
+    //     console.log(horizontalSliderBootstrap.getValue());
+        voronoi_id = horizontalSliderBootstrap.getValue()
+        if (voronoi_id == 1){
+            layers.pop()
+            map.addLayer(voronoi_1)
+        } else if (voronoi_id == 2) {
+            layers.pop()
+            map.addLayer(voronoi_2)
+        } else if (voronoi_id == 3) {
+            layers.pop()
+            map.addLayer(voronoi_3)
+        }
+        
+    })
+    verticalSliderBootstrap.on("change", function(){
+    //     console.log(verticalSliderBootstrap.getValue());
+        voronoi_id = verticalSliderBootstrap.getValue()
+        if (voronoi_id == 1){
+            layers.pop()
+            map.addLayer(voronoi_1)
+        } else if (voronoi_id == 2) {
+            layers.pop()
+            map.addLayer(voronoi_2)
+        } else if (voronoi_id == 3) {
+            layers.pop()
+            map.addLayer(voronoi_3)
+        }
+        
+    })
+
+
+    
+    
+    
     /* html 5 slider */
-    var htmlSlider = document.getElementById("htmlSlider");
-    htmlSlider.setAttribute("value", 1);
-    htmlSlider.setAttribute("min", 1);
-    htmlSlider.setAttribute("max", 3);
-    htmlSlider.setAttribute("step", 1);
+    var horizontalHTMLSlider = document.getElementById("horizontal-htmlSlider");
+    horizontalHTMLSlider.setAttribute("value", 1);
+    horizontalHTMLSlider.setAttribute("min", 1);
+    horizontalHTMLSlider.setAttribute("max", 3);
+    horizontalHTMLSlider.setAttribute("step", 1);
+
+    var verticalHTMLSlider = document.getElementById("vertical-htmlSlider");
+    verticalHTMLSlider.setAttribute("value", 1);
+    verticalHTMLSlider.setAttribute("min", 1);
+    verticalHTMLSlider.setAttribute("max", 3);
+    verticalHTMLSlider.setAttribute("step", 1); 
+//     verticalHTMLSlider.setAttribute("orient", "vertical"); // not working
+//     horizontalHTMLSlider.setAttribute("style", "background-color:#FE9A2E");
+
+    horizontalHTMLSlider.oninput = function(){
+//             console.log(horizontalHTMLSlider.value);
+            voronoi_id = horizontalHTMLSlider.value
+            if (voronoi_id == 1){
+                layers.pop()
+                map.addLayer(voronoi_1)
+            } else if (voronoi_id == 2) {
+                layers.pop()
+                map.addLayer(voronoi_2)
+            } else if (voronoi_id == 3) {
+                layers.pop()
+                map.addLayer(voronoi_3)
+            }             
+    }
+    verticalHTMLSlider.oninput = function(){
+//             console.log(verticalHTMLSlider.value);
+            voronoi_id = verticalHTMLSlider.value
+            if (voronoi_id == 1){
+                layers.pop()
+                map.addLayer(voronoi_1)
+            } else if (voronoi_id == 2) {
+                layers.pop()
+                map.addLayer(voronoi_2)
+            } else if (voronoi_id == 3) {
+                layers.pop()
+                map.addLayer(voronoi_3)
+            }             
+    } 
+    
+//     var output = document.createElement("DIV");
+//     output.setAttribut("id", "output");
+//     document.getElementById("output").innerHTML = "test"
+//     
     
 } // init()############################################################################################
 
