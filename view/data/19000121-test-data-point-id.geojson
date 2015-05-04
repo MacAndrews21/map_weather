@@ -1,0 +1,23 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "id": "01", "properties": { "stations_i": 2374, "stationsna": "Husum", "lufttemper": 1.0, "mess_datum": 19000121, "pid": 128247, "id": 2374 }, "geometry": { "type": "Point", "coordinates": [ 9.0667, 54.4833 ] } },
+{ "type": "Feature", "id": "02", "properties": { "stations_i": 880, "stationsna": "Cottbus", "lufttemper": 0.8, "mess_datum": 19000121, "pid": 128248, "id": 880 }, "geometry": { "type": "Point", "coordinates": [ 14.4333, 51.7667 ] } },
+{ "type": "Feature", "id": "03", "properties": { "stations_i": 4933, "stationsna": "Stuttgart-Hohenheim", "lufttemper": 3.4, "mess_datum": 19000121, "pid": 128249, "id": 4933 }, "geometry": { "type": "Point", "coordinates": [ 9.2103, 48.7147 ] } },
+{ "type": "Feature", "id": "04", "properties": { "stations_i": 4625, "stationsna": "Schwerin", "lufttemper": 1.0, "mess_datum": 19000121, "pid": 128250, "id": 4625 }, "geometry": { "type": "Point", "coordinates": [ 11.3886, 53.6442 ] } },
+{ "type": "Feature", "id": "05", "properties": { "stations_i": 1425, "stationsna": "Frankfurt\/Main (Feldbergstr.)", "lufttemper": 3.9, "mess_datum": 19000121, "pid": 128251, "id": 1425 }, "geometry": { "type": "Point", "coordinates": [ 8.6611, 50.1225 ] } },
+{ "type": "Feature", "id": "06", "properties": { "stations_i": 863, "stationsna": "Clausthal-Zellerfeld", "lufttemper": -1.3, "mess_datum": 19000121, "pid": 128252, "id": 863 }, "geometry": { "type": "Point", "coordinates": [ 10.3411, 51.8078 ] } },
+{ "type": "Feature", "id": "07", "properties": { "stations_i": 3383, "stationsna": "München-Botanischer Garten", "lufttemper": 1.3, "mess_datum": 19000121, "pid": 128253, "id": 3383 }, "geometry": { "type": "Point", "coordinates": [ 11.5019, 48.1636 ] } },
+{ "type": "Feature", "id": "08", "properties": { "stations_i": 3088, "stationsna": "Lübeck-Werft", "lufttemper": 1.8, "mess_datum": 19000121, "pid": 128254, "id": 3088 }, "geometry": { "type": "Point", "coordinates": [ 10.7039, 53.8953 ] } },
+{ "type": "Feature", "id": "09", "properties": { "stations_i": 1757, "stationsna": "Greifswald", "lufttemper": 0.6, "mess_datum": 19000121, "pid": 128255, "id": 1757 }, "geometry": { "type": "Point", "coordinates": [ 13.4075, 54.0978 ] } },
+{ "type": "Feature", "id": "10", "properties": { "stations_i": 661, "stationsna": "Braunschweig (T.H.)", "lufttemper": 0.8, "mess_datum": 19000121, "pid": 128256, "id": 661 }, "geometry": { "type": "Point", "coordinates": [ 10.5333, 52.2708 ] } },
+{ "type": "Feature", "id": "11", "properties": { "stations_i": 5732, "stationsna": "Wrixum\/Föhr", "lufttemper": 0.1, "mess_datum": 19000121, "pid": 128257, "id": 5732 }, "geometry": { "type": "Point", "coordinates": [ 8.54, 54.6831 ] } },
+{ "type": "Feature", "id": "12", "properties": { "stations_i": 3, "stationsna": "Aachen", "lufttemper": 6.2, "mess_datum": 19000121, "pid": 128258, "id": 3 }, "geometry": { "type": "Point", "coordinates": [ 6.0833, 50.7833 ] } },
+{ "type": "Feature", "id": "13", "properties": { "stations_i": 2444, "stationsna": "Jena (Sternwarte)", "lufttemper": 2.1, "mess_datum": 19000121, "pid": 128259, "id": 2444 }, "geometry": { "type": "Point", "coordinates": [ 11.5842, 50.9267 ] } },
+{ "type": "Feature", "id": "14", "properties": { "stations_i": 2290, "stationsna": "Hohenpeißenberg", "lufttemper": 0.0, "mess_datum": 19000121, "pid": 128260, "id": 2290 }, "geometry": { "type": "Point", "coordinates": [ 11.0156, 47.8011 ] } },
+{ "type": "Feature", "id": "15", "properties": { "stations_i": 3404, "stationsna": "Münster", "lufttemper": 0.5, "mess_datum": 19000121, "pid": 128261, "id": 3404 }, "geometry": { "type": "Point", "coordinates": [ 7.7003, 51.9975 ] } },
+{ "type": "Feature", "id": "16", "properties": { "stations_i": 402, "stationsna": "Berlin-Dahlem (LFAG)", "lufttemper": 1.0, "mess_datum": 19000121, "pid": 128262, "id": 402 }, "geometry": { "type": "Point", "coordinates": [ 13.3014, 52.4578 ] } }
+]
+}

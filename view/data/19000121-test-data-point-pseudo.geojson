@@ -1,0 +1,23 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "stations_id": 2374, "stationsname": "Husum", "lufttemperatur": 1.0, "mess_datum": 19000121, "pid": 128247 }, "geometry": { "type": "Point", "coordinates": [ 1009300.427175373537466, 7262224.118801710195839 ] } },
+{ "type": "Feature", "properties": { "stations_id": 880, "stationsname": "Cottbus", "lufttemperatur": 0.8, "mess_datum": 19000121, "pid": 128248 }, "geometry": { "type": "Point", "coordinates": [ 1606707.606466554105282, 6758051.250933892093599 ] } },
+{ "type": "Feature", "properties": { "stations_id": 4933, "stationsname": "Stuttgart-Hohenheim", "lufttemperatur": 3.4, "mess_datum": 19000121, "pid": 128249 }, "geometry": { "type": "Point", "coordinates": [ 1025285.90605328779202, 6226589.876189853064716 ] } },
+{ "type": "Feature", "properties": { "stations_id": 4625, "stationsname": "Schwerin", "lufttemperatur": 1.0, "mess_datum": 19000121, "pid": 128250 }, "geometry": { "type": "Point", "coordinates": [ 1267773.152848274214193, 7103057.946409501135349 ] } },
+{ "type": "Feature", "properties": { "stations_id": 1425, "stationsname": "Frankfurt\/Main (Feldbergstr.)", "lufttemperatur": 3.9, "mess_datum": 19000121, "pid": 128251 }, "geometry": { "type": "Point", "coordinates": [ 964149.241709621041082, 6467517.773037793114781 ] } },
+{ "type": "Feature", "properties": { "stations_id": 863, "stationsname": "Clausthal-Zellerfeld", "lufttemperatur": -1.3, "mess_datum": 19000121, "pid": 128252 }, "geometry": { "type": "Point", "coordinates": [ 1151165.986242320388556, 6765447.557638131082058 ] } },
+{ "type": "Feature", "properties": { "stations_id": 3383, "stationsname": "München-Botanischer Garten", "lufttemperatur": 1.3, "mess_datum": 19000121, "pid": 128253 }, "geometry": { "type": "Point", "coordinates": [ 1280385.651155153755099, 6134115.329731653444469 ] } },
+{ "type": "Feature", "properties": { "stations_id": 3088, "stationsname": "Lübeck-Werft", "lufttemperatur": 1.8, "mess_datum": 19000121, "pid": 128254 }, "geometry": { "type": "Point", "coordinates": [ 1191552.697502120630816, 7150352.250872082076967 ] } },
+{ "type": "Feature", "properties": { "stations_id": 1757, "stationsname": "Greifswald", "lufttemperatur": 0.6, "mess_datum": 19000121, "pid": 128255 }, "geometry": { "type": "Point", "coordinates": [ 1492516.072810814483091, 7188700.24433945864439 ] } },
+{ "type": "Feature", "properties": { "stations_id": 661, "stationsname": "Braunschweig (T.H.)", "lufttemperatur": 0.8, "mess_datum": 19000121, "pid": 128256 }, "geometry": { "type": "Point", "coordinates": [ 1172561.592372788581997, 6849238.454277251847088 ] } },
+{ "type": "Feature", "properties": { "stations_id": 5732, "stationsname": "Wrixum\/Föhr", "lufttemperatur": 0.1, "mess_datum": 19000121, "pid": 128257 }, "geometry": { "type": "Point", "coordinates": [ 950668.451374556636438, 7300603.612414717674255 ] } },
+{ "type": "Feature", "properties": { "stations_id": 3, "stationsname": "Aachen", "lufttemperatur": 6.2, "mess_datum": 19000121, "pid": 128258 }, "geometry": { "type": "Point", "coordinates": [ 677189.858342721010558, 6583051.14803917799145 ] } },
+{ "type": "Feature", "properties": { "stations_id": 2444, "stationsname": "Jena (Sternwarte)", "lufttemperatur": 2.1, "mess_datum": 19000121, "pid": 128259 }, "geometry": { "type": "Point", "coordinates": [ 1289547.245247440645471, 6608338.029133995063603 ] } },
+{ "type": "Feature", "properties": { "stations_id": 2290, "stationsname": "Hohenpeißenberg", "lufttemperatur": 0.0, "mess_datum": 19000121, "pid": 128260 }, "geometry": { "type": "Point", "coordinates": [ 1226250.982782385312021, 6073828.520481586456299 ] } },
+{ "type": "Feature", "properties": { "stations_id": 3404, "stationsname": "Münster", "lufttemperatur": 0.5, "mess_datum": 19000121, "pid": 128261 }, "geometry": { "type": "Point", "coordinates": [ 857193.474955443874933, 6799673.434955938719213 ] } },
+{ "type": "Feature", "properties": { "stations_id": 402, "stationsname": "Berlin-Dahlem (LFAG)", "lufttemperatur": 1.0, "mess_datum": 19000121, "pid": 128262 }, "geometry": { "type": "Point", "coordinates": [ 1480705.07483764924109, 6883328.6369788357988 ] } }
+]
+}

@@ -22,6 +22,14 @@ var vector = new ol.layer.Vector({
     style: createPointStyleFunction()
 });
 
+var pointJSON = new ol.layer.Vector({
+    source: new ol.source.GeoJSON({
+        projection: 'EPSG:3857',
+        url: 'data/19000121-test-data-point-id.geojson'            
+    }),
+    style: createPointStyleFunction()
+});
+
 /**
  * ---------------------------------------------------------------------------------------------------- 
  * load geoJson polygon file

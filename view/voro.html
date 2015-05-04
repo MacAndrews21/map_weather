@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Historical Weather</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" href="http://openlayers.org/en/v3.1.1/css/ol.css" type="text/css">
+        <script src="http://openlayers.org/en/v3.1.1/build/ol.js" type="text/javascript"></script>
+        
+        <script src="libs/bootstrap-slider/js/bootstrap-slider.js" type="text/javascript"></script>
+        <link href="libs/bootstrap-slider/css/bootstrap-slider.css" rel="stylesheet">
+        
+        <link href="libs/dhtmlx/dhtmlxslider.css" rel="stylesheet">
+        <script src="libs/dhtmlx/dhtmlxslider.js" type="text/javascript"></script>
+        
+        <link href="libs/slider-style.css" rel="stylesheet">
+        <link href="libs/map-frame-style.css" rel="stylesheet">
+        <script src="libs/style.js" type="text/javascript"></script>
+        <script src="libs/layer.js" type="text/javascript"></script>
+        <script src="libs/script.js" type="text/javascript"></script>
+        <script src="libs/Javascript-Voronoi/rhill-voronoi-core.js" type="text/javascript"></script> 
+        <script src="libs/voronoi-calc.js" type="text/javascript"></script> 
+    </head>
+    <body onload="VoronoiDemo.init();">
+<!--     <body> -->
+        <!-- <input id="test"/> -->
+        <div id="main">
+                        <!-- dhtmlx-slider -->
+            <div id='horizontal-slider-dhtmlx'></div>
+            <div id='vertical-slider-dhtmlx'></div>
+
+            
+            <!-- bootstrap-slider -->
+            <div id="horizontal-slider-bootstrap-div"><input id="horizontal-slider-bootstrap" data-slider-id="horizontal-slider-bootstrap" type="text"/></div>
+            <div id="vertical-slider-bootstrap-div"><input id="vertical-slider-bootstrap" data-slider-id="vertical-slider-bootstrap" type="text"/></div>
+            
+            
+            <!-- html5 slider -->
+            <div id="horizontal-htmlSlider-div"><input type="range" id="horizontal-htmlSlider"/></div>
+            <div id="vertical-htmlSlider-div"><input type="range" id="vertical-htmlSlider"/></div>
+            
+            
+<!--             <canvas id="voronoiCanvas" width="800" height="600" onclick="VoronoiDemo.recompute();"></canvas> -->
+            <canvas id="voronoiCanvas" width="800" height="600"></canvas>
+<!--             <div id="tempData"></div> -->
+            <div id="map"></div> 
+        </div>
+    </body>
+</html>

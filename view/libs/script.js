@@ -16,6 +16,7 @@ function init(){
 //                 mapQuest  // mapQuest topographic background map
                 boundaries_europe
                 ,boundaries_germany // germany boundaries
+                ,pointJSON
                 ,voronoi_1
             ],
             view: new ol.View({
@@ -34,6 +35,29 @@ function init(){
  */
     var voronoi_id = 1
     var layers = map.getLayers()
+    
+    var yourSites = [];
+    console.log(pointJSON)
+//     console.log(pointJSON.getSource().getExtent())
+    function getCoord(layerObject) {
+        layerObject.getSource().getFeatures().forEach(function(pJ){
+//             console.log("Stationsname: " + pJ.getProperties()['stationsname'])
+            console.log("Geometry: ", pJ.getGeometry())
+//             console.log("Geometry Type: " + pJ.getGeometry().getType())
+            console.log("Geometry Coordinates: " + pJ.getGeometry().getCoordinates())
+//             console.log("Geometry Name: " + pJ.getGeometryName())
+// //             console.log("Extent: ", pJ.getExtent())
+//             console.log("Feature ID: " + pJ.getId())
+            yourSites.push(pJ.getGeometry().getCoordinates())
+        })
+        
+    }
+    getCoord(pointJSON)
+    console.log(yourSites)
+    console.log(pointJSON.getSource().getFeatures().length)
+// console.log("F-ID: " + pointJSON.getSource().getFeatureById(02))
+// console.log(pointJSON.getSource().getAttributions())
+    
     
 /* dhtml-slider */
     var horizontalSliderDHTMLX = new dhtmlXSlider({
