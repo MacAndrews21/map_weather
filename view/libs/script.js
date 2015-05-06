@@ -7,7 +7,9 @@ var map;
  * function to build things after site is loaded
  */
 function init(){
-/**
+
+
+ /**
  * ----------------------------------------------------------------------------------------------------
  * MAP
  */    
@@ -37,28 +39,55 @@ function init(){
     var layers = map.getLayers()
     
     var yourSites = [];
-    console.log(pointJSON)
+//     console.log(pointJSON)
 //     console.log(pointJSON.getSource().getExtent())
-    function getCoord(layerObject) {
-        layerObject.getSource().getFeatures().forEach(function(pJ){
-//             console.log("Stationsname: " + pJ.getProperties()['stationsname'])
-            console.log("Geometry: ", pJ.getGeometry())
-//             console.log("Geometry Type: " + pJ.getGeometry().getType())
-            console.log("Geometry Coordinates: " + pJ.getGeometry().getCoordinates())
-//             console.log("Geometry Name: " + pJ.getGeometryName())
-// //             console.log("Extent: ", pJ.getExtent())
-//             console.log("Feature ID: " + pJ.getId())
-            yourSites.push(pJ.getGeometry().getCoordinates())
-        })
-        
-    }
-    getCoord(pointJSON)
-    console.log(yourSites)
-    console.log(pointJSON.getSource().getFeatures().length)
+//     function getCoord() {
+//         pointJSON.getSource().getFeatures().forEach(function(pJ){
+// //             console.log("Stationsname: " + pJ.getProperties()['stationsname'])
+//             console.log("Geometry: ", pJ.getGeometry())
+// //             console.log("Geometry Type: " + pJ.getGeometry().getType())
+//             console.log("Geometry Coordinates: " + pJ.getGeometry().getCoordinates())
+// //             console.log("Geometry Name: " + pJ.getGeometryName())
+// // //             console.log("Extent: ", pJ.getExtent())
+// //             console.log("Feature ID: " + pJ.getId())
+//             yourSites.push(pJ.getGeometry().getCoordinates())
+//     console.log(yourSites)
+//         })
+//         
+//     }
+//     getCoord(pointJSON)
+//     console.log(pointJSON.getSource().getFeatures().length)
 // console.log("F-ID: " + pointJSON.getSource().getFeatureById(02))
 // console.log(pointJSON.getSource().getAttributions())
+    var sitesID = 1
+       var consoleSliderDHTMLX = new dhtmlXSlider({
+        parent: "console-slider-dhtmlx", 
+        size: 300,
+        min: 1,
+        max: 3, 
+        step: 1
     
-    
+    }); 
+    layersSites.getCoord(pointJSON);
+     consoleSliderDHTMLX.attachEvent("onChange", function(){
+//             console.log(horizontalSliderDHTMLX.getValue())
+            sitesID = consoleSliderDHTMLX.getValue()
+            if (sitesID == 1){
+//                 layers.pop()
+//                 map.addLayer(voronoi_1)
+                   layersSites.getCoord(pointJSON);
+            } else if (sitesID == 2) {
+//                 layers.pop()
+//                 map.addLayer(voronoi_2)
+//                 layersSites.getCoord(pointJSON);
+//                 test(pointJSON)
+                layersSites.init(pointJSON);
+            } else if (sitesID == 3) {
+//                 layers.pop()
+//                 map.addLayer(voronoi_3)
+                layersSites.getCoord(pointJSON);
+            }
+        });   
 /* dhtml-slider */
     var horizontalSliderDHTMLX = new dhtmlXSlider({
         parent: "horizontal-slider-dhtmlx", 

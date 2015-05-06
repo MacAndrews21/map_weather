@@ -1,24 +1,27 @@
 // var voronoi = new Voronoi();
 // 
 // var bbox = {
-//     xl: 0
-//     , xr: 800
-//     , yt: 0
-//     , yb: 600
+//     xl: 0.1
+//     , xr: 800.1
+//     , yt: 0.1
+//     , yb: 600.1
 // };
 // 
-var sites = [
-    {x: 200, y: 200}
-    , {x: 50, y: 250}
-    , {x: 400, y: 100}
-]
-// 
+// var sites = [
+//     {x: 200.2858584585458545854, y: 200.2858584585458545854}
+//     , {x: 50.2858584585458545854, y: 250.2858584585458545854}
+//     , {x: 400.2858584585458545854, y: 100.2858584585458545854}
+// ]
+// console.log(sites)
+// // 
 // var diagramm = voronoi.compute(sites, bbox)
-
+// 
 // console.log(diagramm.vertices)
 // console.log(diagramm.edges)
 // console.log(diagramm.cells)
 // console.log(diagramm.execTime)
+
+
 // function getSites(fileName){
 //     var mySites = []
 // 
@@ -50,7 +53,7 @@ var sites = [
 // getSites("data/19000121-test-data-point.geojson")
 // console.log(map.pointJSON.getGeometry())
 // getCoord(pointJSON)
-
+var yourSites = [];
 var VoronoiDemo = {
     voronoi: new Voronoi(),
 //     sites: [
@@ -71,12 +74,25 @@ var VoronoiDemo = {
         this.diagram = this.voronoi.compute(this.sites, this.bbox);
 //         this.randomSites(0,false);
 //         this.sites.getSites("data/19000121-test-data-point.geojson")
-//         getCoord(pointJSON);
-        init();
+        this.getCoord(pointJSON);
         this.render();
         },
-//     getSites
-    
+    getCoord: function(layer){
+        anitaSites = [];
+        layer.getSource().getFeatures().forEach(function(pJ){
+//             console.log("Stationsname: " + pJ.getProperties()['stationsname'])
+//             anitaSites.push(pJ.getGeometry().getCoordinates())
+//             console.log("X: ", pJ.getGeometry().getCoordinates()[0])
+//             console.log("Y: ", pJ.getGeometry().getCoordinates()[1])
+            yourSites.push({
+                x: pJ.getGeometry().getCoordinates()[0],
+                y: pJ.getGeometry().getCoordinates()[1]
+                
+            })
+        })
+//         console.log(pointJSON.getSource().getExtent())
+        console.log(yourSites)
+    },
     render: function() {
         var ctx = this.canvas.getContext('2d');
         // background
